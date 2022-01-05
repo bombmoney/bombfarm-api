@@ -176,8 +176,9 @@ import cafeBscPools from '../../data/degens/cafeLpPools.json';
 import cafePolyPools from '../../data/matic/cafeLpPools.json';
 import oldPools from '../../data/archive/oldLpPools.json';
 */
+/*
 import kyberPools from '../../data/matic/kyberLpPools.json';
-
+*/
 /*
 import babyPools from '../../data/degens/babyLpPools.json';
 import quickDualLpPools from '../../data/matic/quickDualLpPools.json';
