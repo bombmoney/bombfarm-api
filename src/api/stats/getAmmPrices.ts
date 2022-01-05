@@ -1,22 +1,34 @@
 `use strict`;
 
 import { fetchAmmPrices } from '../../utils/fetchAmmPrices';
+/*
 import { fetchDmmPrices } from '../../utils/fetchDmmPrices';
 import { fetchMooPrices } from '../../utils/fetchMooPrices';
+*/
 import { fetchCoinGeckoPrices } from '../../utils/fetchCoinGeckoPrices';
 
+/*
 import getNonAmmPrices from './getNonAmmPrices';
+*/
+
+/*
 import bakeryPools from '../../data/bakeryLpPools.json';
 import blizzardLpPools from '../../data/degens/blizzardLpPools.json';
 import alpacaLpPools from '../../data/alpacaLpPools.json';
 import cafePools from '../../data/cafeLpPools.json';
+*/
+
 import cakeLpPools from '../../data/cakeLpPools.json';
 import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
+
+/*
 import kebabPools from '../../data/kebabLpPools.json';
 import bdollarSbdoPools from '../../data/bdollarSbdoLpPools.json';
 import boltBtdPools from '../../data/boltBtdLpPools.json';
 import boltBtsPools from '../../data/boltBtsLpPools.json';
+*/
 import bombLpPools from '../../data/bombLpPools.json';
+/*
 import mdexPools from '../../data/heco/mdexLpPools.json';
 import monsterPools from '../../data/monsterLpPools.json';
 import narPools from '../../data/narLpPools.json';
@@ -163,7 +175,10 @@ import singularFantomPools from '../../data/fantom/singularLpPools.json';
 import cafeBscPools from '../../data/degens/cafeLpPools.json';
 import cafePolyPools from '../../data/matic/cafeLpPools.json';
 import oldPools from '../../data/archive/oldLpPools.json';
+*/
 import kyberPools from '../../data/matic/kyberLpPools.json';
+
+/*
 import babyPools from '../../data/degens/babyLpPools.json';
 import quickDualLpPools from '../../data/matic/quickDualLpPools.json';
 import pearzapFantomPools from '../../data/fantom/pearzapLpPools.json';
@@ -186,6 +201,7 @@ import blockMinePools from '../../data/degens/blockMineLpPools.json';
 import chargePools from '../../data/degens/chargeLpPools.json';
 import charmPools from '../../data/fantom/charmLpPools.json';
 import solarbeamDualLpV2Pools from '../../data/moonriver/solarbeamDualLpV2Pools.json';
+*/
 
 const INIT_DELAY = 0 * 60 * 1000;
 const REFRESH_INTERVAL = 5 * 60 * 1000;
@@ -193,8 +209,12 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // FIXME: if this list grows too big we might hit the ratelimit on initialization everytime
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
+  /*
   ...solarbeamDualLpV2Pools,
+  */
   ...bombLpPools,
+
+  /*
   ...charmPools,
   ...chargePools,
   ...blockMinePools,
@@ -369,8 +389,9 @@ const pools = [
   ...narPools,
   ...nyacashPools,
   ...thugsPools,
+  */
   ...cakeLpV1Pools,
-  ...cakeLpPools,
+  ...cakeLpPools,  
 ];
 
 const dmmPools = [...kyberPools];
@@ -396,22 +417,41 @@ const updateAmmPrices = async () => {
   try {
     const coinGeckoPrices = fetchCoinGeckoPrices(coinGeckoCoins);
     const ammPrices = fetchAmmPrices(pools, knownPrices);
+    /*
     const dmmPrices = fetchDmmPrices(dmmPools, knownPrices);
+    */
 
+    /*
     const mooPrices = ammPrices.then(async ({ poolPrices, tokenPrices }) => {
       return await fetchMooPrices(mooTokens, tokenPrices, poolPrices);
     });
+    */
 
     const tokenPrices = ammPrices.then(async ({ _, tokenPrices }) => {
+      /*
       const dmm = await dmmPrices;
+      */
+      /*
       const mooTokenPrices = await mooPrices;
+      */
+      /* 
       return { ...tokenPrices, ...dmm.tokenPrices, ...mooTokenPrices, ...(await coinGeckoPrices) };
+      */
+       /*
+        return { ...tokenPrices, ...mooTokenPrices, ...(await coinGeckoPrices) };
+      */
+      return { ...tokenPrices, ...(await coinGeckoPrices) };
     });
 
     const lpPrices = ammPrices.then(async ({ poolPrices, _ }) => {
+      /*
       const dmm = await dmmPrices;
+      */
+      /*
       const nonAmmPrices = await getNonAmmPrices(await tokenPrices);
-      return { ...poolPrices, ...dmm.poolPrices, ...nonAmmPrices };
+      */
+      /* return { ...poolPrices, ...dmm.poolPrices, ...nonAmmPrices }; */
+      return { ...poolPrices };
     });
 
     await tokenPrices;
