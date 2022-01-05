@@ -394,7 +394,9 @@ const pools = [
   ...cakeLpPools,  
 ];
 
+/*
 const dmmPools = [...kyberPools];
+*/
 
 const coinGeckoCoins = ['stasis-eurs', 'tether-eurt'];
 
