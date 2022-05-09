@@ -19,6 +19,25 @@
     }
   },
   {
+    "name": "bomb-busm-busd",
+    "address": "0xEe46Bd06a8876c3cc86027dc7D2Df19af513cD12",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 6,
+    "lp0": {
+      "address": "0x6216B17f696B14701E17BCB24Ec14430261Be94A",
+      "oracle": "tokens",
+      "oracleId": "BUSM",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "oracle": "tokens",
+      "oracleId": "BUSD",
+      "decimals": "1e18"
+    }
+  },
+  {
     "name": "bomb-bomb-btcb",
     "address": "0x84392649eb0bC1c1532F2180E58Bae4E1dAbd8D6",
     "decimals": "1e18",
@@ -34,6 +53,25 @@
       "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
       "oracle": "tokens",
       "oracleId": "BTCB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bomb-bomb-bshare",
+    "address": "0x54f9fE531224Fa43Feb218B20ABa84d22a8fDc0C",
+    "decimals": "1e18",
+    "poolId": 4,
+    "chainId": 56,
+    "lp0": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x531780FAcE85306877D7e1F05d713D1B50a37F7A",
+      "oracle": "tokens",
+      "oracleId": "BSHARE",
       "decimals": "1e18"
     }
   }
