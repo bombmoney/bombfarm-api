@@ -10,6 +10,8 @@ const getBtdLpApys = require('./bolt/getBtdLpApys');
 const getBtsLpApys = require('./bolt/getBtsLpApys');
 const getBunnyRewardsApy = require('./bunny/getBunnyRewardsApy');
 const getBombLpApys = require('./bombfarm/getBombLpApys');
+const getBsharePoolApys = require('./bombfarm/getBsharePoolApys');
+const getBombAcsiApys = require('./bombfarm/getBombAcsiApys');
 
 const { getDegensLpApys } = require('./degens');
 const getDoppleApys = require('./dopple/getDoppleApys');
@@ -61,6 +63,9 @@ const getApys = [
   // getBifiMaxiApy,
   // getBifiMaxiV2Apy,
   getBombLpApys,
+  getBsharePoolApys,
+  getBombAcsiApys,
+  //getBombPrices,
   // getBtdLpApys,
   // getBtsLpApys,
   // getBunnyRewardsApy,
