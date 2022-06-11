@@ -1,0 +1,97 @@
+[
+  {
+    "name": "bomb-czshares-bnb",
+    "address": "0x08E7b8D65045F9cC497b2Bd5BcB59b2eF9c76dA1",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 3,
+    "lp0": {
+      "address": "0x8169a36EC368882207515D6F509A2E7Fc74203d3",
+      "oracle": "tokens",
+      "oracleId": "CZSHARES",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "oracle": "tokens",
+      "oracleId": "WBNB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bomb-czbnb-bnb",
+    "address": "0x6773C6b86c15A9c10219eb92c036DE3F8F2ae956",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 0,
+    "lp0": {
+      "address": "0xf43fffb83D7C73275c2feaAC15D5670f7D739B50",
+      "oracle": "tokens",
+      "oracleId": "CZBNB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "oracle": "tokens",
+      "oracleId": "WBNB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bomb-czbusd-busd",
+    "address": "0x16254Cd930547e9591cdF4e3594f32857d106E12",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 4,
+    "lp0": {
+      "address": "0xa2A3Be47bEb973d48401010742D5E442177d037B",
+      "oracle": "tokens",
+      "oracleId": "CZBUSD",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "oracle": "tokens",
+      "oracleId": "BUSD",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bomb-czbomb-bomb",
+    "address": "0x84b860ED296b12615b3bA50A7BE482E8eF2699B1",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x737BC70D07aA6B7f4Ba6d12B45E8CDDBa2446B77",
+      "oracle": "tokens",
+      "oracleId": "CZBOMB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bomb-czemp-emp",
+    "address": "0xdDb1046a98A1068d1dCC3229699e3a1ee203b6D8",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 2,
+    "lp0": {
+      "address": "0x3b248CEfA87F836a4e6f6d6c9b42991b88Dc1d58",
+      "oracle": "tokens",
+      "oracleId": "EMP",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xa700Ec63f9D3D9A03981CF7F8Eb805c444EDBC21",
+      "oracle": "tokens",
+      "oracleId": "CZEMP",
+      "decimals": "1e18"
+    }
+  }
+]
