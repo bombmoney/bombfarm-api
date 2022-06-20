@@ -93,5 +93,24 @@
       "oracleId": "CZEMP",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bomb-phub-btcb",
+    "address": "0x0ccf8B264A333d73162c2Bb32dFE27187703ccfa",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 5,
+    "lp0": {
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "oracle": "tokens",
+      "oracleId": "BTCB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x95A6772a2272b9822D4b3DfeEaedF732F1D28DB8",
+      "oracle": "tokens",
+      "oracleId": "PHUB",
+      "decimals": "1e18"
+    }
   }
 ]
