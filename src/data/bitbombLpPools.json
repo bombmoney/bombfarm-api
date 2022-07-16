@@ -1,0 +1,97 @@
+[
+  {
+    "name": "bitbomb-bitbtc-btcb",
+    "address": "0x601E4fAbFC98933b60DcE8d198b936F2D2D5aA09",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 0,
+    "lp0": {
+      "address": "0x39739A969ff667C91a81252b3DDDFAe31aaE4Aeb",
+      "oracle": "tokens",
+      "oracleId": "BITBTC",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "oracle": "tokens",
+      "oracleId": "BTCB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bitbomb-bitdot-dot",
+    "address": "0xcd47cB7E1e0E9a4DEc4a1C02A3a6bACE79134622",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x123c62f04c9D70bD6F04E6282434c728F04eBD50",
+      "oracle": "tokens",
+      "oracleId": "BITDOT",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+      "oracle": "tokens",
+      "oracleId": "DOT",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bitbomb-bitatom-atom",
+    "address": "0xBc60EDc20e537a85F1EB91f471e32A8839B92722",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x0Eb3a705fc54725037CC9e008bDede697f62F335",
+      "oracle": "tokens",
+      "oracleId": "ATOM",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x3CdC14690B4930f8b61A2195062f5AB8A6beC48d",
+      "oracle": "tokens",
+      "oracleId": "BITATOM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bitbomb-bitada-ada",
+    "address": "0x3E784ce022D55bCfD87F6D7281fE5aAcD6e44018",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+      "oracle": "tokens",
+      "oracleId": "ADA",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x9F45C43c5Ed3c1a7FD7fb9f3b611860AE4dF2453",
+      "oracle": "tokens",
+      "oracleId": "BITADA",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bitbomb-bitshare-btcb",
+    "address": "0x9b9f8a291eabd58Bec64315D9bB1c4E99789177B",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x116B19FBAFCc947E7Ffcc3A42ff7185589143a56",
+      "oracle": "tokens",
+      "oracleId": "BITSHARE",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "oracle": "tokens",
+      "oracleId": "BTCB",
+      "decimals": "1e18"
+    }
+  }
+]

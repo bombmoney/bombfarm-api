@@ -8,7 +8,7 @@ import { arbitrum } from './arbitrum';
 import { celo } from './celo';
 import { moonriver } from './moonriver';
 import { cronos } from './cronos';
-import { aurora } from './aurora';
+//import { aurora } from './aurora';
 import Chain from '../types/chain';
 import { ChainId } from '../types/chainid';
 import { ConstRecord } from '../types/const';
@@ -26,7 +26,6 @@ const _addressBook = {
   celo,
   moonriver,
   cronos,
-  aurora,
 } as const;
 
 const _addressBookByChainId = {
@@ -40,7 +39,7 @@ const _addressBookByChainId = {
   [ChainId.celo]: celo,
   [ChainId.moonriver]: moonriver,
   [ChainId.cronos]: cronos,
-  [ChainId.aurora]: aurora,
+  // [ChainId.aurora]: aurora,
 } as const;
 
 export const addressBook: ConstRecord<typeof _addressBook, Chain> = _addressBook;
