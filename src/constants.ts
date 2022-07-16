@@ -74,6 +74,16 @@ const SOLAR_LPF = 0.002;
 
 const MULTICHAIN_RPC: Record<ChainId, string> = {
   [ChainId.bsc]: BSC_RPC,
+  128: '',
+  137: '',
+  250: '',
+  43114: '',
+  1666600000: '',
+  42161: '',
+  42220: '',
+  1285: '',
+  25: '',
+  1313161554: '',
 };
 
 const BSC_VAULTS_ENDPOINT =

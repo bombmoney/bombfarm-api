@@ -18,29 +18,11 @@ export * from '../types/chainid';
 const _addressBook = {
   polygon,
   bsc,
-  avax,
-  fantom,
-  heco,
-  one,
-  arbitrum,
-  celo,
-  moonriver,
-  cronos,
-  aurora,
 } as const;
 
 const _addressBookByChainId = {
   [ChainId.polygon]: polygon,
   [ChainId.bsc]: bsc,
-  [ChainId.avax]: avax,
-  [ChainId.fantom]: fantom,
-  [ChainId.heco]: heco,
-  [ChainId.one]: one,
-  [ChainId.arbitrum]: arbitrum,
-  [ChainId.celo]: celo,
-  [ChainId.moonriver]: moonriver,
-  [ChainId.cronos]: cronos,
-  [ChainId.aurora]: aurora,
 } as const;
 
 export const addressBook: ConstRecord<typeof _addressBook, Chain> = _addressBook;
