@@ -17,6 +17,7 @@ import getNonAmmPrices from './getNonAmmPrices';
 // import boltBtsPools from '../../data/boltBtsLpPools.json';
 import bombLpPools from '../../data/bombLpPools.json';
 import bombCzLpPools from '../../data/bombCzLpPools.json';
+import bitbombLpPools from '../../data/bitbombLpPools.json';
 import cakeLpPools from '../../data/cakeLpPools.json';
 import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
 // import mdexPools from '../../data/heco/mdexLpPools.json';
@@ -198,6 +199,7 @@ const pools = [
   // ...solarbeamDualLpV2Pools,
   ...bombLpPools,
   ...bombCzLpPools,
+  ...bitbombLpPools,
   // ...charmPools,
   // ...chargePools,
   // ...blockMinePools,
