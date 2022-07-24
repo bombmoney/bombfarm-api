@@ -8,7 +8,7 @@ import fetchPrice from '../../../utils/fetchPrice';
 import { getUtcSecondsFromDayRange } from '../../../utils/getUtcSecondsFromDayRange';
 import { getEDecimals } from '../../../utils/getEDecimals';
 import { etherscanApiUrlMap } from './etherscanApiUrlMap';
-import { bifiLpMap } from './bifiLpMap';
+import { phubLpMap } from './bifiLpMap';
 
 const INIT_DELAY = 40 * 1000;
 const REFRESH_INTERVAL = 15 * 60 * 1000;
