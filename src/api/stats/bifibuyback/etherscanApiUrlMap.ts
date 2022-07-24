@@ -6,7 +6,7 @@ export const etherscanApiUrlMap = {
     url: 'https://api.bscscan.com',
     apiToken: '1R1VIWFIS3B3SZRVD5W9EV68SRCNB8ZH77',
   },
-  polygon: {
+  /*polygon: {
     url: 'https://api.polygonscan.com',
     apiToken: 'AXIPYQNDK2M98DMKSRMZEJ78PIJSBA9K3V',
   },
@@ -29,5 +29,5 @@ export const etherscanApiUrlMap = {
   arbitrum: {
     url: 'https://api.arbiscan.io',
     apiToken: 'QR9KETWZEU64T1TQN4V8VD7H6HIE3X95UW',
-  },
+  },*/
 } as const;
