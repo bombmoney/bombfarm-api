@@ -13,4 +13,5 @@ export const beefyfinance = {
   gasPrice: '0x16cD932c494Ac1B3452d6C8453fB7665aB49EC6b',
   multicall: '0xB94858b0bB5437498F5453A16039337e5Fdc269C',
   bifiMaxiStrategy: '0x87056F5E8Dce0fD71605E6E291C6a3B53cbc3818',
+  phubMaxiStrategy: '0x3155cF479Cd159DB1161506e82232bfF27b45b0d',
 } as const;
