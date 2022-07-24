@@ -71,7 +71,7 @@ const updateBifiBuyback = async () => {
 
     chainNames.forEach(chainName => {
       const { url, apiToken } = etherscanApiUrlMap[chainName];
-      const lp = bifiLpMap[chainName];
+      const lp = phubLpMap[chainName];
       const chainAddressBook = addressBook[chainName];
       const chainBIFI = chainAddressBook.tokens.PHUB;
       const chainBifiMaxi = chainAddressBook.platforms.beefyfinance.phubMaxiStrategy;
