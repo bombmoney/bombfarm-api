@@ -72,7 +72,7 @@ const _tokens = {
     symbol: 'SOL',
     address: '0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F',
     chainId: 43114,
-    decimals: 18,
+    decimals: 9,
     logoURI: 'https://snowtrace.io/token/images/wormholesolana_32.png',
     website: 'https://snowpegs.com',
     description: 'Algorithmic Stablecoin pegged to SOL.',
