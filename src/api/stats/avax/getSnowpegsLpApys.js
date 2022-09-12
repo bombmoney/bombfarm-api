@@ -7,10 +7,10 @@ const ERC20 = require('../../../abis/ERC20.json');
 const fetchPrice = require('../../../utils/fetchPrice');
 const pools = require('../../../data/bombSnowLpPools.json');
 const { getTotalLpStakedInUsdAVAX } = require('../../../utils/getTotalStakedInUsdAvax');
+const { getTradingFeeAprSushi } = require('../../../utils/getTradingFeeApr');
 import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
 const { BASE_HPY, AVAX_CHAIN_ID, SPOOKY_LPF } = require('../../../constants');
 // const { getTradingFeeApr } = require('../../../utils/getTradingFeeApr');
-const { getTradingFeeAprSushi } = require('../../../utils/getTradingFeeApr');
 
 // import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
 import getApyBreakdown from '../common/getApyBreakdown';
@@ -42,11 +42,12 @@ const getSnowpegsLpApys = async () => {
   // const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, liquidityProviderFee);
   // const tradingAprs = await getTradingFeeApr(joeClient, pairAddresses, SPOOKY_LPF);
   // const yearlyTradingFees = await getYearlyJoePlatformTradingFees(joeClient, liquidityProviderFee);
+  const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, liquidityProviderFee);
 
   //const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, SPOOKY_LPF);
 
   // console.log('pools', tradingAprs);
-  return getApyBreakdown(pools, undefined, farmAprs, SPOOKY_LPF);
+  return getApyBreakdown(pools, tradingAprs, farmAprs, SPOOKY_LPF);
 };
 
 const getPoolApy = async (rewardPool, pool) => {
