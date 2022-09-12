@@ -812,18 +812,6 @@ const _tokens = {
   },
   LINK: {
     chainId: 43114,
-    address: '0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651',
-    decimals: 18,
-    name: 'ChainLink Token',
-    symbol: 'LINK',
-    website: 'https://chain.link/',
-    description:
-      'Link is the currency used to pay the Chainlink node operators for their work. Chainlink node operators have to stake LINK in the network in order to participate and provide data services.',
-    logoURI:
-      'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651/logo.png',
-  },
-  LINKe: {
-    chainId: 43114,
     address: '0x5947BB275c521040051D82396192181b413227A3',
     decimals: 18,
     name: 'ChainLink Token',
