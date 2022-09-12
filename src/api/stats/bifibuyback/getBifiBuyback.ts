@@ -8,7 +8,7 @@ import fetchPrice from '../../../utils/fetchPrice';
 import { getUtcSecondsFromDayRange } from '../../../utils/getUtcSecondsFromDayRange';
 import { getEDecimals } from '../../../utils/getEDecimals';
 import { etherscanApiUrlMap } from './etherscanApiUrlMap';
-import { bifiLpMap } from './bifiLpMap';
+import { phubLpMap } from './bifiLpMap';
 
 const INIT_DELAY = 40 * 1000;
 const REFRESH_INTERVAL = 15 * 60 * 1000;
@@ -71,7 +71,7 @@ const updateBifiBuyback = async () => {
 
     chainNames.forEach(chainName => {
       const { url, apiToken } = etherscanApiUrlMap[chainName];
-      const lp = bifiLpMap[chainName];
+      const lp = phubLpMap[chainName];
       const chainAddressBook = addressBook[chainName];
       const chainBIFI = chainAddressBook.PHUB;
       const chainBifiMaxi = '0xa9def29db63ef56e1aee4a695109911dded8c644';

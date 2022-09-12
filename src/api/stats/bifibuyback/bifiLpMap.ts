@@ -11,3 +11,7 @@ export const bifiLpMap = {
   moonriver: moonriver.platforms.sushi.bifiMovrLp,
   arbitrum: arbitrum.platforms.sushi.bifiEthLp,
 } as const;
+
+export const phubLpMap = {
+  bsc: bsc.platforms.pancake.phubBtcbLp,
+} as const;
