@@ -7,8 +7,8 @@ const {
   // HECO_CHAIN_ID,
   // HECO_VAULTS_ENDPOINT,
 
-  // AVAX_CHAIN_ID,
-  // AVAX_VAULTS_ENDPOINT,
+  AVAX_CHAIN_ID,
+  AVAX_VAULTS_ENDPOINT,
 
   // POLYGON_CHAIN_ID,
   // POLYGON_VAULTS_ENDPOINT,
@@ -61,11 +61,11 @@ const chains = [
   //   vaultsEndpoint: HECO_VAULTS_ENDPOINT,
   //   governancePool: require('../../data/heco/governancePool.json'),
   // },
-  // {
-  //   chainId: AVAX_CHAIN_ID,
-  //   vaultsEndpoint: AVAX_VAULTS_ENDPOINT,
-  //   governancePool: require('../../data/avax/governancePool.json'),
-  // },
+  {
+    chainId: AVAX_CHAIN_ID,
+    vaultsEndpoint: AVAX_VAULTS_ENDPOINT,
+    governancePool: require('../../data/avax/governancePool.json'),
+  },
   // {
   //   chainId: ONE_CHAIN_ID,
   //   vaultsEndpoint: ONE_VAULTS_ENDPOINT,

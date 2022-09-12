@@ -37,7 +37,7 @@ const getBuyback = async (
   chainName: string,
   scanUrl: string,
   apiToken: string,
-  BIFI: any, // TODO type this with brknrobot's address book types, once merged
+  PHUB: any, // TODO type this with brknrobot's address book types, once merged
   bifiMaxiAddress: string,
   bifiLpAddress: string
 ): Promise<{ [key: string]: BigNumber }> => {
@@ -50,12 +50,12 @@ const getBuyback = async (
   for (const entry of json.result) {
     // actually should use the lp pool data here instead of address-book. Will change after converging address-book and api
     if (entry.from === bifiLpAddress.toLowerCase()) {
-      const tokenAmount = new BigNumber(entry.value).dividedBy(getEDecimals(BIFI.decimals));
+      const tokenAmount = new BigNumber(entry.value).dividedBy(getEDecimals(18));
       bifiBuybackTokenAmount = bifiBuybackTokenAmount.plus(tokenAmount);
       txCount += 1;
     }
   }
-  // console.log(`Harvest count: ${txCount}`);
+  console.log(`Harvest count: ${txCount}`);
   return { [chainName]: bifiBuybackTokenAmount };
 };
 
@@ -73,13 +73,13 @@ const updateBifiBuyback = async () => {
       const { url, apiToken } = etherscanApiUrlMap[chainName];
       const lp = phubLpMap[chainName];
       const chainAddressBook = addressBook[chainName];
-      const chainBIFI = chainAddressBook.tokens.PHUB;
-      const chainBifiMaxi = chainAddressBook.platforms.beefyfinance.phubMaxiStrategy;
+      const chainBIFI = chainAddressBook.PHUB;
+      const chainBifiMaxi = '0xa9def29db63ef56e1aee4a695109911dded8c644';
       const prom = getBuyback(chainName, url, apiToken, chainBIFI, chainBifiMaxi, lp);
       promises.push(prom);
     });
 
-    const bifiPrice = await fetchPrice({ oracle: 'tokens', id: 'BIFI' });
+    const bifiPrice = await fetchPrice({ oracle: 'tokens', id: 'PHUB' });
 
     const results = await Promise.allSettled<{ [key: string]: BigNumber }[]>(promises);
     let dailyBifiBuybackAmountByChain: { [key: string]: BigNumber } = {};

@@ -3,7 +3,7 @@ const { bsc, heco, polygon, fantom, avax, moonriver, arbitrum } = addressBook;
 
 // BIFI lp pair bifi maxi uses per chain
 export const bifiLpMap = {
-  bsc: bsc.platforms.pancake.bifiBnbLp,
+  bsc: '0x0ccf8B264A333d73162c2Bb32dFE27187703ccfa',
   heco: heco.platforms.mdex.usdtBifiLp,
   polygon: polygon.platforms.quickswap.wethBifiLp,
   fantom: fantom.platforms.spookyswap.wftmBifiLp,

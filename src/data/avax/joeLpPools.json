@@ -760,6 +760,25 @@
     }
   },
   {
+    "name": "joe-sol-usdc.e",
+    "address": "0x74eF6a9a7aE35899EaC8E2F2427C1a604d66Ae7b",
+    "decimals": "1e18",
+    "poolId": 56,
+    "chainId": 43114,
+    "lp0": {
+      "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
+      "oracle": "tokens",
+      "oracleId": "USDC.e",
+      "decimals": "1e6"
+    },
+    "lp1": {
+      "address": "0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F",
+      "oracle": "tokens",
+      "oracleId": "SOL",
+      "decimals": "1e18"
+    }
+  },
+  {
     "name": "joe-wavax-snob",
     "address": "0x8fB5bD3aC8eFD05DACae82F512dD03e14aAdAb73",
     "decimals": "1e18",

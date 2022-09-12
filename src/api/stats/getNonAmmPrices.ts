@@ -2,9 +2,9 @@
 // import getEllipsisPrices from './bsc/ellipsis/getEllipsisPrices';
 import getBombMaxiPrices from './bsc/bombfarm/getBombMaxiPrices';
 
-// import getSnob3PoolPrice from './avax/getSnob3PoolPrice';
+import getSnob3PoolPrice from './avax/getSnob3PoolPrice';
 // import getFroyoPrices from './fantom/getFroyoPrices';
-// import getGondolaPrices from './avax/getGondolaPrices';
+import getGondolaPrices from './avax/getGondolaPrices';
 // import getCurvePolygonPrices from './matic/getCurvePrices';
 // import getCurveFantomPrices from './fantom/getCurvePrices';
 // import getDopplePrices from './bsc/dopple/getDopplePrices';
@@ -13,10 +13,10 @@ import getBombMaxiPrices from './bsc/bombfarm/getBombMaxiPrices';
 //import getBombAcsiPrices from './bsc/bombfarm/getBombAcsiPrices'
 
 // import getCurveArbitrumPrices from './arbitrum/getCurvePrices';
-// import getCurveAvaxPrices from './avax/getCurvePrices';
+import getCurveAvaxPrices from './avax/getCurvePrices';
 // import getCurveHarmonyPrices from './one/getCurvePrices';
 // import getBeethovenxPrices from './fantom/getBeethovenxPrices';
-// import { getSynapsePrices } from './avax/getSynapsePrices';
+import { getSynapsePrices } from './avax/getSynapsePrices';
 
 const getNonAmmPrices = async tokenPrices => {
   let prices = {};
@@ -27,18 +27,18 @@ const getNonAmmPrices = async tokenPrices => {
     // getBeltPrices(tokenPrices),
     // getEllipsisPrices(),
     //getBombAcsiPrices(tokenPrices),
-    // getSnob3PoolPrice(),
+    //  getSnob3PoolPrice(),
     // getFroyoPrices(),
-    // getGondolaPrices(tokenPrices),
+    //getGondolaPrices(tokenPrices),
     // getCurvePolygonPrices(tokenPrices),
     // getCurveFantomPrices(tokenPrices),
     // getCurveArbitrumPrices(tokenPrices),
-    // getCurveAvaxPrices(tokenPrices),
+    getCurveAvaxPrices(tokenPrices),
     // getCurveHarmonyPrices(tokenPrices),
     // getDopplePrices(),
     // getIronSwapPrices(),
     //  getAlpacaIbPrices(tokenPrices),
-    // getSynapsePrices(),
+    //getSynapsePrices(),
   ];
 
   // Setup error logs

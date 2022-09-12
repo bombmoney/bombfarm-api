@@ -1,4 +1,4 @@
-// const { getAvaxApys } = require('./avax');
+const { getAvaxApys } = require('./avax');
 // const { getMaticApys } = require('./matic');
 // const { getHecoApys } = require('./heco');
 // const { getFantomApys } = require('./fantom');
@@ -29,7 +29,7 @@ const updateApys = async () => {
   try {
     const results = await Promise.allSettled([
       // getMaticApys(),
-      // getAvaxApys(),
+      getAvaxApys(),
       // getFantomApys(),
       // getHecoApys(),
       getBSCApys(),

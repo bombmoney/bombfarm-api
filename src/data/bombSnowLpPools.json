@@ -1,0 +1,78 @@
+[
+  {
+    "name": "snowpegs-snowavax-avax",
+    "address": "0x705432071bBC04da194991bC6Ce347dBA1752CCC",
+    "decimals": "1e18",
+    "chainId": 43114,
+    "poolId": 0,
+    "lp0": {
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "oracle": "tokens",
+      "oracleId": "AVAX",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xDA1d9C79240003195d0a67f202efcCCC3F78b994",
+      "oracle": "tokens",
+      "oracleId": "SNOWAVAX",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "snowpegs-snowlink-link",
+    "address": "0xCf21480eDf195be08DCaaC38eCAD07e19375A2Ee",
+    "decimals": "1e18",
+    "chainId": 43114,
+    "poolId": 2,
+    "lp0": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "SNOWLINK",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x5947BB275c521040051D82396192181b413227A3",
+      "oracle": "tokens",
+      "oracleId": "LINK",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "snowpegs-snowshare-avax",
+    "address": "0xcA6Ea4FcCD2d5Ec403e927A0d8Bd1210F09aCC95",
+    "decimals": "1e18",
+    "chainId": 43114,
+    "poolId": 3,
+    "lp0": {
+      "address": "0x8bb24b7C26c272b0A371ECdc829D690C9A8B1d4b",
+      "oracle": "tokens",
+      "oracleId": "SNOWSHARE",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "oracle": "tokens",
+      "oracleId": "AVAX",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "snowpegs-snowsol-sol",
+    "address": "0xEc58150DE32b83274cf63010b5bB1fc6d49159df",
+    "decimals": "1e18",
+    "chainId": 43114,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x531780FAcE85306877D7e1F05d713D1B50a37F7A",
+      "oracle": "tokens",
+      "oracleId": "SNOWSOL",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F",
+      "oracle": "tokens",
+      "oracleId": "SOL",
+      "decimals": "1e18"
+    }
+  }
+]

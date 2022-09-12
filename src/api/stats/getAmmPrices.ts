@@ -16,6 +16,8 @@ import getNonAmmPrices from './getNonAmmPrices';
 // import boltBtdPools from '../../data/boltBtdLpPools.json';
 // import boltBtsPools from '../../data/boltBtsLpPools.json';
 import bombLpPools from '../../data/bombLpPools.json';
+import snowLpPools from '../../data/bombSnowLpPools.json';
+
 import bombCzLpPools from '../../data/bombCzLpPools.json';
 import bitbombLpPools from '../../data/bitbombLpPools.json';
 import cakeLpPools from '../../data/cakeLpPools.json';
@@ -37,11 +39,11 @@ import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
 // import memePools from '../../data/degens/memeFarmLpPools.json';
 // import nutsPools from '../../data/degens/nutsLpPools.json';
 // import slimePools from '../../data/degens/slimeLpPools.json';
-// import pangolinPools from '../../data/avax/pangolinLpPools.json';
+import pangolinPools from '../../data/avax/pangolinLpPools.json';
 // import swipePools from '../../data/swipeLpPools.json';
-// import comAvaxPools from '../../data/avax/comAvaxLpPools.json';
+import comAvaxPools from '../../data/avax/comAvaxLpPools.json';
 // import comBscPools from '../../data/comBscLpPools.json';
-// import snowballPools from '../../data/avax/snobLpPools.json';
+import snowballPools from '../../data/avax/snobLpPools.json';
 // import pumpyPools from '../../data/pumpyLpPools.json';
 // import spacePools from '../../data/degens/spaceLpPools.json';
 // import nautPools from '../../data/degens/nautLpPools.json';
@@ -141,8 +143,8 @@ import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
 // import yelPools from '../../data/degens/yelLpPools.json';
 // import omnifarmPools from '../../data/degens/omnifarmLpPools.json';
 // import viralataLpPools from '../../data/degens/viralataLpPools.json';
-// import joePools from '../../data/avax/joeLpPools.json';
-// import joeDualLpPools from '../../data/avax/joeDualLpPools.json';
+import joePools from '../../data/avax/joeLpPools.json';
+import joeDualLpPools from '../../data/avax/joeDualLpPools.json';
 // import elkPools from '../../data/degens/elkLpPools.json';
 // import longPools from '../../data/degens/longLpPools.json';
 // import CZFPools from '../../data/degens/CZFLpPools.json';
@@ -197,9 +199,11 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
   // ...solarbeamDualLpV2Pools,
+  ...snowLpPools,
   ...bombLpPools,
   ...bombCzLpPools,
   ...bitbombLpPools,
+
   // ...charmPools,
   // ...chargePools,
   // ...blockMinePools,
@@ -244,8 +248,8 @@ const pools = [
   // ...longPools,
   // ...elkPools,
   // ...viralataLpPools,
-  // ...joePools,
-  // ...joeDualLpPools,
+  ...joePools,
+  //  ...joeDualLpPools,
   // ...omnifarmPools,
   // ...tosdisPools,
   // ...yelPools,
@@ -344,10 +348,10 @@ const pools = [
   // ...nautPools,
   // ...spacePools,
   // ...pumpyPools,
-  // ...snowballPools,
+  ...snowballPools,
   // ...comBscPools,
-  // ...comAvaxPools,
-  // ...pangolinPools,
+  ...comAvaxPools,
+  //...pangolinPools,
   // ...swipePools,
   // ...slimePools,
   // ...blizzardLpPools,
@@ -391,6 +395,7 @@ const knownPrices = {
   UST: 1,
   USDN: 1,
   cUSD: 1,
+  'USDC.e': 1,
 };
 
 let tokenPricesCache: Promise<any>;
