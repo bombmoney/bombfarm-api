@@ -15,7 +15,7 @@ const BNB = {
 } as const;
 
 const _tokens = {
-  BITBOMB: {
+  BITBTC: {
     name: 'BITBTC',
     symbol: 'BITBTC',
     address: '0x39739A969ff667C91a81252b3DDDFAe31aaE4Aeb',
