@@ -74,35 +74,45 @@ const SOLAR_LPF = 0.002;
 
 const MULTICHAIN_RPC: Record<ChainId, string> = {
   [ChainId.bsc]: BSC_RPC,
+  [ChainId.avax]: AVAX_RPC,
+  [ChainId.heco]: HECO_RPC,
+  [ChainId.polygon]: POLYGON_RPC,
+  [ChainId.fantom]: FANTOM_RPC,
+  [ChainId.one]: ONE_RPC,
+  [ChainId.arbitrum]: ARBITRUM_RPC,
+  [ChainId.celo]: CELO_RPC,
+  [ChainId.moonriver]: MOONRIVER_RPC,
+  [ChainId.cronos]: CRONOS_RPC,
+  [ChainId.aurora]: AURORA_RPC,
 };
 
 const BSC_VAULTS_ENDPOINT =
   'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/bsc_pools.js';
-// const HECO_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/heco_pools.js';
-// const AVAX_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/avalanche_pools.js';
-// const POLYGON_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/polygon_pools.js';
-// const FANTOM_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/fantom_pools.js';
-// const ONE_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/harmony_pools.js';
-// const ARBITRUM_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/arbitrum_pools.js';
-// const CELO_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/celo_pools.js';
-// const MOONRIVER_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/moonriver_pools.js';
-// const CRONOS_VAULTS_ENDPOINT =
-//   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/cronos_pools.js';
-// //const AURORA_VAULTS_ENDPOINT =
-//  'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/aurora_pools.js';
+const HECO_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/heco_pools.js';
+const AVAX_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/avalanche_pools.js';
+const POLYGON_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/polygon_pools.js';
+const FANTOM_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/fantom_pools.js';
+const ONE_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/harmony_pools.js';
+const ARBITRUM_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/arbitrum_pools.js';
+const CELO_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/celo_pools.js';
+const MOONRIVER_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/moonriver_pools.js';
+const CRONOS_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/cronos_pools.js';
+//const AURORA_VAULTS_ENDPOINT =
+//'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/aurora_pools.js';
 
 const MULTICHAIN_ENDPOINTS = {
   bsc: BSC_VAULTS_ENDPOINT,
   // heco: HECO_VAULTS_ENDPOINT,
-  // avax: AVAX_VAULTS_ENDPOINT,
+  avax: AVAX_VAULTS_ENDPOINT,
   // polygon: POLYGON_VAULTS_ENDPOINT,
   // fantom: FANTOM_VAULTS_ENDPOINT,
   // one: ONE_VAULTS_ENDPOINT,
@@ -110,7 +120,7 @@ const MULTICHAIN_ENDPOINTS = {
   // celo: CELO_VAULTS_ENDPOINT,
   // moonriver: MOONRIVER_VAULTS_ENDPOINT,
   // cronos: CRONOS_VAULTS_ENDPOINT,
-  // aurora: AURORA_VAULTS_ENDPOINT,
+  //aurora: AURORA_VAULTS_ENDPOINT,
 };
 
 const BEEFY_PERFORMANCE_FEE = 0.045;
@@ -124,35 +134,35 @@ export {
   BSC_RPC_ENDPOINTS,
   BSC_CHAIN_ID,
   BSC_VAULTS_ENDPOINT,
-  // HECO_RPC,
-  // HECO_CHAIN_ID,
-  //HECO_VAULTS_ENDPOINT,
-  // AVAX_RPC,
-  // AVAX_CHAIN_ID,
-  //  AVAX_VAULTS_ENDPOINT,
-  // POLYGON_RPC,
-  // POLYGON_CHAIN_ID,
-  //  POLYGON_VAULTS_ENDPOINT,
-  // FANTOM_RPC,
-  // FANTOM_CHAIN_ID,
-  // FANTOM_VAULTS_ENDPOINT,
-  // ONE_RPC,
-  // ONE_CHAIN_ID,
-  // ONE_VAULTS_ENDPOINT,
-  // ARBITRUM_RPC,
-  // ARBITRUM_CHAIN_ID,
-  // ARBITRUM_VAULTS_ENDPOINT,
-  // CELO_RPC,
-  // CELO_CHAIN_ID,
-  // CELO_VAULTS_ENDPOINT,
-  // MOONRIVER_RPC,
-  // MOONRIVER_CHAIN_ID,
-  // MOONRIVER_VAULTS_ENDPOINT,
-  // CRONOS_RPC,
-  // CRONOS_CHAIN_ID,
-  // CRONOS_VAULTS_ENDPOINT,
-  // AURORA_RPC,
-  // AURORA_CHAIN_ID,
+  HECO_RPC,
+  HECO_CHAIN_ID,
+  HECO_VAULTS_ENDPOINT,
+  AVAX_RPC,
+  AVAX_CHAIN_ID,
+  AVAX_VAULTS_ENDPOINT,
+  POLYGON_RPC,
+  POLYGON_CHAIN_ID,
+  POLYGON_VAULTS_ENDPOINT,
+  FANTOM_RPC,
+  FANTOM_CHAIN_ID,
+  FANTOM_VAULTS_ENDPOINT,
+  ONE_RPC,
+  ONE_CHAIN_ID,
+  ONE_VAULTS_ENDPOINT,
+  ARBITRUM_RPC,
+  ARBITRUM_CHAIN_ID,
+  ARBITRUM_VAULTS_ENDPOINT,
+  CELO_RPC,
+  CELO_CHAIN_ID,
+  CELO_VAULTS_ENDPOINT,
+  MOONRIVER_RPC,
+  MOONRIVER_CHAIN_ID,
+  MOONRIVER_VAULTS_ENDPOINT,
+  CRONOS_RPC,
+  CRONOS_CHAIN_ID,
+  CRONOS_VAULTS_ENDPOINT,
+  AURORA_RPC,
+  AURORA_CHAIN_ID,
   // AURORA_VAULTS_ENDPOINT,
   BASE_HPY,
   MINUTELY_HPY,
