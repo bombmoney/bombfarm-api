@@ -18,6 +18,7 @@ const MULTICALLS = {
 
 const MulticallAbi = require('../abis/BeefyPriceMulticall.json');
 const ERC20 = require('../abis/common/ERC20/ERC20.json');
+const LPPair = require('../abis/LPPair.json');
 const BATCH_SIZE = 128;
 
 const sortByKeys = o => {
@@ -83,6 +84,22 @@ const fetchAmmPrices = async (pools, knownPrices) => {
         filtered[j + i].totalSupply = new BigNumber(buf[j * 3 + 0]?.toString());
         filtered[j + i].lp0.balance = new BigNumber(buf[j * 3 + 1]?.toString());
         filtered[j + i].lp1.balance = new BigNumber(buf[j * 3 + 2]?.toString());
+
+        // Handle special cases where the multicall is bugged and returns 0 (for SOL specifically)
+        if (
+          filtered[j + i].lp1.balance.toString() == '0' &&
+          filtered[j + i].name.indexOf('-sol') !== -1
+        ) {
+          const lpContract = new ethers.Contract(filtered[j + i].address, LPPair, provider);
+          filtered[j + i].totalSupply = new BigNumber(await lpContract.totalSupply().toString());
+          const reserves = await lpContract.getReserves();
+          filtered[j + i].lp0.balance = new BigNumber(reserves[0].toString());
+          filtered[j + i].lp1.balance = new BigNumber(reserves[1].toString());
+          // console.log(filtered[j + i].name);
+        }
+        // if (filtered[j + i].name === 'joe-mai-usdc.e') {
+        //   console.log(filtered[j + i], (new BigNumber(buf[j * 3 + 1]?.toString())).toString(), (new BigNumber(buf[j * 3 + 2]?.toString())).toString());
+        // }
       }
     }
 
