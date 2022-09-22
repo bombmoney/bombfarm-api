@@ -91,7 +91,7 @@ const fetchAmmPrices = async (pools, knownPrices) => {
           filtered[j + i].name.indexOf('-sol') !== -1
         ) {
           const lpContract = new ethers.Contract(filtered[j + i].address, LPPair, provider);
-          filtered[j + i].totalSupply = new BigNumber(await lpContract.totalSupply().toString());
+          filtered[j + i].totalSupply = new BigNumber((await lpContract.totalSupply()).toString());
           const reserves = await lpContract.getReserves();
           filtered[j + i].lp0.balance = new BigNumber(reserves[0].toString());
           filtered[j + i].lp1.balance = new BigNumber(reserves[1].toString());
