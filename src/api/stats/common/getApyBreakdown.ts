@@ -6,6 +6,7 @@ import { compound } from '../../../utils/compound';
 import { BASE_HPY, BEEFY_PERFORMANCE_FEE, SHARE_AFTER_PERFORMANCE_FEE } from '../../../constants';
 
 export interface ApyBreakdown {
+  vaultAprWithoutPerformanceFee?: number;
   vaultApr?: number;
   compoundingsPerYear?: number;
   beefyPerformanceFee?: number;
@@ -48,6 +49,7 @@ export const getApyBreakdown = (
     // Add token to APYs object
     result.apys[pool.name] = totalApy;
     result.apyBreakdowns[pool.name] = {
+      vaultAprWithoutPerformanceFee: simpleApr,
       vaultApr: vaultApr,
       compoundingsPerYear: BASE_HPY,
       beefyPerformanceFee: performanceFee,
