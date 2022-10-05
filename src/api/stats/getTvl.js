@@ -10,8 +10,8 @@ const {
   AVAX_CHAIN_ID,
   AVAX_VAULTS_ENDPOINT,
 
-  // POLYGON_CHAIN_ID,
-  // POLYGON_VAULTS_ENDPOINT,
+  POLYGON_CHAIN_ID,
+  POLYGON_VAULTS_ENDPOINT,
 
   // FANTOM_CHAIN_ID,
   // FANTOM_VAULTS_ENDPOINT,
@@ -46,11 +46,11 @@ const chains = [
     vaultsEndpoint: BSC_VAULTS_ENDPOINT,
     governancePool: require('../../data/governancePool.json'),
   },
-  // {
-  //   chainId: POLYGON_CHAIN_ID,
-  //   vaultsEndpoint: POLYGON_VAULTS_ENDPOINT,
-  //   governancePool: require('../../data/matic/governancePool.json'),
-  // },
+  {
+    chainId: POLYGON_CHAIN_ID,
+    vaultsEndpoint: POLYGON_VAULTS_ENDPOINT,
+    governancePool: require('../../data/matic/governancePool.json'),
+  },
   // {
   //   chainId: FANTOM_CHAIN_ID,
   //   vaultsEndpoint: FANTOM_VAULTS_ENDPOINT,

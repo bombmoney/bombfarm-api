@@ -8,7 +8,10 @@ import fetchPrice from '../../../utils/fetchPrice';
 import { getUtcSecondsFromDayRange } from '../../../utils/getUtcSecondsFromDayRange';
 import { getEDecimals } from '../../../utils/getEDecimals';
 import { etherscanApiUrlMap } from './etherscanApiUrlMap';
-import { phubLpMap } from './bifiLpMap';
+import { bifiLpMap } from './bifiLpMap';
+import { bscWeb3 as web3 } from '../../../utils/web3';
+const PhubfeedistributorABI = require('../../../abis/PhubfeedistributorABI.json');
+
 
 const INIT_DELAY = 40 * 1000;
 const REFRESH_INTERVAL = 15 * 60 * 1000;
@@ -95,11 +98,29 @@ const updateBifiBuyback = async () => {
     for (const key in dailyBifiBuybackAmountByChain) {
       const buybackTokenAmount = dailyBifiBuybackAmountByChain[key];
       const buybackUsdAmount = buybackTokenAmount.times(new BigNumber(bifiPrice));
+      let buybackTotalBoughtAmount;
+      if (key === 'bsc') {
+        const phubfeedistributorContract = new web3.eth.Contract(
+          PhubfeedistributorABI,
+          '0xa9def29db63ef56e1aee4a695109911dded8c644'
+        );
+        const balance = await phubfeedistributorContract.methods.totalBought().call({});
+        const digits = 18;
+        let adjustedBalance = balance / Math.pow(10, digits);
+        if (adjustedBalance < 0) {
+          adjustedBalance = 0;
+        }
+
+        buybackTotalBoughtAmount = adjustedBalance;
+      } else {
+        buybackTotalBoughtAmount = 0;
+      }
       dailyBifiBuybackStats = {
         ...dailyBifiBuybackStats,
         [key]: {
           buybackTokenAmount,
           buybackUsdAmount,
+          buybackTotalBoughtAmount,
         },
       };
     }

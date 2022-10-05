@@ -76,6 +76,25 @@
     }
   },
   {
+    "name": "bomb-czbomb-bitbtc",
+    "address": "0x950003CFBCd3E377D50FDa3de2666567408328A6",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x39739A969ff667C91a81252b3DDDFAe31aaE4Aeb",
+      "oracle": "tokens",
+      "oracleId": "BITBTC",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x737BC70D07aA6B7f4Ba6d12B45E8CDDBa2446B77",
+      "oracle": "tokens",
+      "oracleId": "CZBOMB",
+      "decimals": "1e18"
+    }
+  },
+  {
     "name": "bomb-czemp-emp",
     "address": "0xdDb1046a98A1068d1dCC3229699e3a1ee203b6D8",
     "decimals": "1e18",
