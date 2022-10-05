@@ -17,12 +17,13 @@ import getNonAmmPrices from './getNonAmmPrices';
 // import boltBtsPools from '../../data/boltBtsLpPools.json';
 import bombLpPools from '../../data/bombLpPools.json';
 import snowLpPools from '../../data/bombSnowLpPools.json';
+import polyLpPools from '../../data/bombPolyLpPools.json';
 
 import bombCzLpPools from '../../data/bombCzLpPools.json';
 import bitbombLpPools from '../../data/bitbombLpPools.json';
 import cakeLpPools from '../../data/cakeLpPools.json';
 import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
-// import mdexPools from '../../data/heco/mdexLpPools.json';
+import mdexPools from '../../data/heco/mdexLpPools.json';
 // import monsterPools from '../../data/monsterLpPools.json';
 // import narPools from '../../data/narLpPools.json';
 // import nyacashPools from '../../data/nyacashLpPools.json';
@@ -67,7 +68,7 @@ import snowballPools from '../../data/avax/snobLpPools.json';
 // import hfiPools from '../../data/heco/hfiLpPools.json';
 // import lydPools from '../../data/avax/lydLpPools.json';
 // import icarusPools from '../../data/icarusLpPools.json';
-// import quickPools from '../../data/matic/quickLpPools.json';
+import quickPools from '../../data/matic/quickLpPools.json';
 // import krillPools from '../../data/matic/krillLpPools.json';
 // import sushiLpPools from '../../data/matic/sushiLpPools.json';
 // import satisPools from '../../data/degens/satisLpPools.json';
@@ -107,7 +108,7 @@ import snowballPools from '../../data/avax/snobLpPools.json';
 // import merlinPools from '../../data/merlinLpPools.json';
 // import polypupLpPools from '../../data/matic/polypupLpPools.json';
 // import polypupBallLpPools from '../../data/matic/polypupBallLpPools.json';
-// import polyyeldQuickLpPools from '../../data/matic/polyyeldQuickLpPools.json';
+import polyyeldQuickLpPools from '../../data/matic/polyyeldQuickLpPools.json';
 // import polyyeldSushiLpPools from '../../data/matic/polyyeldSushiLpPools.json';
 // import polyyeldApeLpPools from '../../data/matic/polyyeldApeLpPools.json';
 // import polyyeldL2LpPools from '../../data/matic/polyyeldL2LpPools.json';
@@ -203,6 +204,10 @@ const pools = [
   ...bombLpPools,
   ...bombCzLpPools,
   ...bitbombLpPools,
+  ...polyLpPools,
+  ...quickPools,
+  ...mdexPools,
+  ...polyyeldQuickLpPools,
 
   // ...charmPools,
   // ...chargePools,

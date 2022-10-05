@@ -1,0 +1,40 @@
+[
+  {
+    "name": "polypegs-pmatic-matic",
+    "address": "0x5328221B7BF04846291a7Ca2803c7786f9806Ea1",
+    "decimals": "1e18",
+    "chainId": 137,
+    "poolId": 0,
+    "lp0": {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "oracle": "tokens",
+      "oracleId": "WMATIC",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xB7e1E341b2CBCc7d1EdF4DC6E5e962aE5C621ca5",
+      "oracle": "tokens",
+      "oracleId": "PMATIC",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "polypegs-pshare-matic",
+    "address": "0x3E1d352F66b4d3F56043C66d5e59367624B3757E",
+    "decimals": "1e18",
+    "chainId": 137,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x04b79c851ed1A36549C6151189c79EC0eaBca745",
+      "oracle": "tokens",
+      "oracleId": "PSHARE",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "oracle": "tokens",
+      "oracleId": "WMATIC",
+      "decimals": "1e18"
+    }
+  }
+]

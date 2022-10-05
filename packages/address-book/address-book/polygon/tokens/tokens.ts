@@ -27,6 +27,26 @@ const MAI = {
 } as const;
 
 const _tokens = {
+  PMATIC: {
+    name: 'PMATIC',
+    symbol: 'PMATIC',
+    address: '0xB7e1E341b2CBCc7d1EdF4DC6E5e962aE5C621ca5',
+    chainId: 137,
+    decimals: 18,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/pmatic.png',
+    website: 'https://polypegs.com',
+    description: 'Algorithmic Stablecoin pegged to MATIC.',
+  },
+  PSHARE: {
+    name: 'PSHARE',
+    symbol: 'PSHARE',
+    address: '0x04b79c851ed1A36549C6151189c79EC0eaBca745',
+    chainId: 137,
+    decimals: 18,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/pshare.png',
+    website: 'https://polypegs.com',
+    description: 'Algorithmic Stablecoin pegged to MATIC.',
+  },
   WCRO: {
     name: 'WCRO',
     symbol: 'WCRO',
