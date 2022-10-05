@@ -7,15 +7,15 @@ const ERC20 = require('../../../abis/ERC20.json');
 const fetchPrice = require('../../../utils/fetchPrice');
 const pools = require('../../../data/bombPolyLpPools.json');
 const { getTotalLpStakedInUsdAVAX } = require('../../../utils/getTotalStakedInUsdAvax');
-const { getTradingFeeAprSushi } = require('../../../utils/getTradingFeeApr');
 import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
+const { getYearlyPlatformTradingFees } = require('../../../utils/getTradingFeeApr');
 const { BASE_HPY, AVAX_CHAIN_ID, SPOOKY_LPF } = require('../../../constants');
 // const { getTradingFeeApr } = require('../../../utils/getTradingFeeApr');
 
 // import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
 import getApyBreakdown from '../common/getApyBreakdown';
 
-const { joeClient } = require('../../../apollo/client');
+const { quickClient } = require('../../../apollo/client');
 const { compound } = require('../../../utils/compound');
 
 const rewardPool = '0x2Ec1Be1dceA5c9fB040419DEDA55B1aC39e9387f';
@@ -42,9 +42,11 @@ const getPolypegsLpApys = async () => {
   // const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, liquidityProviderFee);
   // const tradingAprs = await getTradingFeeApr(joeClient, pairAddresses, SPOOKY_LPF);
   // const yearlyTradingFees = await getYearlyJoePlatformTradingFees(joeClient, liquidityProviderFee);
-  const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, liquidityProviderFee);
+  // const yearlyTradingFees = await getYearlyPlatformTradingFees(quickClient, liquidityProviderFee);
+  // const totalStakedInQUickUsd = getTotalLpStakedInUsdAVAX(rewardPool, pool, pool.chainId);
+  // const tradingAprs = yearlyTradingFees.div(totalStakedInQUickUsd);
 
-  //const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, SPOOKY_LPF);
+  const tradingAprs = await getTradingFeeAprSushi(quickClient, pairAddresses, liquidityProviderFee);
 
   // console.log('pools', tradingAprs);
   return getApyBreakdown(pools, tradingAprs, farmAprs, SPOOKY_LPF);
