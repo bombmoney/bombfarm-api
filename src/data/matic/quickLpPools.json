@@ -95,25 +95,6 @@
     }
   },
   {
-    "name": "quick-ftm-matic",
-    "address": "0xd2b61a42d3790533fedc2829951a65120624034a",
-    "rewardPool": "0xf81e664c8277d461df561b353d50c4b698144664",
-    "decimals": "1e18",
-    "chainId": 137,
-    "lp0": {
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
-      "oracle": "tokens",
-      "oracleId": "MATIC",
-      "decimals": "1e18"
-    },
-    "lp1": {
-      "address": "0xB85517b87BF64942adf3A0B9E4c71E4Bc5Caa4e5",
-      "oracle": "tokens",
-      "oracleId": "FTM",
-      "decimals": "1e18"
-    }
-  },
-  {
     "name": "quick-watch-quick",
     "address": "0x8000fe11cffA3CEd146D98f091d95C9bC2c55c97",
     "rewardPool": "0x4f5f46Db08D28b7c6A96653B7C4BdB8a209c6331",
@@ -199,25 +180,6 @@
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
       "oracle": "tokens",
       "oracleId": "DAI",
-      "decimals": "1e18"
-    },
-    "lp1": {
-      "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
-      "oracle": "tokens",
-      "oracleId": "MAI",
-      "decimals": "1e18"
-    }
-  },
-  {
-    "name": "quick-mai-matic",
-    "address": "0x7805B64e2d99412d3b8F10Dfe8fc55217C5cc954",
-    "rewardPool": "0x5F709F81cdA3E84fC2af3662B8B8C3F4f44e3d4E",
-    "decimals": "1e18",
-    "chainId": 137,
-    "lp0": {
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
-      "oracle": "tokens",
-      "oracleId": "MATIC",
       "decimals": "1e18"
     },
     "lp1": {
