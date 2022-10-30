@@ -80,7 +80,7 @@
     "address": "0x950003CFBCd3E377D50FDa3de2666567408328A6",
     "decimals": "1e18",
     "chainId": 56,
-    "poolId": 1,
+    "poolId": 6,
     "lp0": {
       "address": "0x39739A969ff667C91a81252b3DDDFAe31aaE4Aeb",
       "oracle": "tokens",
