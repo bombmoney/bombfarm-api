@@ -42,9 +42,9 @@ const getPolypegsLpApys = async () => {
   // const tradingAprs = await getTradingFeeApr(quickClient, pairAddresses, liquidityProviderFee);
   // const tradingAprs = await getTradingFeeApr(quickClient, pairAddresses, SPOOKY_LPF);
   // const yearlyTradingFees = await getYearlyJoePlatformTradingFees(joeClient, liquidityProviderFee);
-  const yearlyTradingFees = await getYearlyPlatformTradingFees(quickClient, liquidityProviderFee);
-  const totalStakedInQUickUsd = getTotalLpStakedInUsd(rewardPool, pool, pool.chainId);
-  const tradingAprs = yearlyTradingFees.div(totalStakedInQUickUsd);
+  //const yearlyTradingFees = await getYearlyPlatformTradingFees(quickClient, liquidityProviderFee);
+  // const totalStakedInQUickUsd = getTotalLpStakedInUsd(rewardPool, pool, pool.chainId);
+  const tradingAprs = getTradingFeeApr(quickClient, pairAddresses, liquidityProviderFee);
 
   //  const tradingAprs = await getTradingFeeAprSushi(quickClient, pairAddresses, liquidityProviderFee);
 
