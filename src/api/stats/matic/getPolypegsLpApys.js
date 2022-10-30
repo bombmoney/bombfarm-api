@@ -6,11 +6,11 @@ const RewardPool = require('../../../abis/SnowPegsRewards.json');
 const ERC20 = require('../../../abis/ERC20.json');
 const fetchPrice = require('../../../utils/fetchPrice');
 const pools = require('../../../data/bombPolyLpPools.json');
-const { getTotalLpStakedInUsdAVAX } = require('../../../utils/getTotalStakedInUsdAvax');
+const { getTotalLpStakedInUsd } = require('../../../utils/getTotalStakedInUsd');
 import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
 const { getYearlyPlatformTradingFees } = require('../../../utils/getTradingFeeApr');
 const { BASE_HPY, AVAX_CHAIN_ID, SPOOKY_LPF } = require('../../../constants');
-// const { getTradingFeeApr } = require('../../../utils/getTradingFeeApr');
+const { getTradingFeeApr } = require('../../../utils/getTradingFeeApr');
 
 // import { getFarmWithTradingFeesApy } from '../../../utils/getFarmWithTradingFeesApy';
 import getApyBreakdown from '../common/getApyBreakdown';
@@ -39,23 +39,23 @@ const getPolypegsLpApys = async () => {
   const pairAddresses = pools.map(pool => pool.address);
   console.log('pairAddresses', pairAddresses);
   // const pairAddresses = pools.map(pool => pool.address);
-  // const tradingAprs = await getTradingFeeAprSushi(joeClient, pairAddresses, liquidityProviderFee);
-  // const tradingAprs = await getTradingFeeApr(joeClient, pairAddresses, SPOOKY_LPF);
+  // const tradingAprs = await getTradingFeeApr(quickClient, pairAddresses, liquidityProviderFee);
+  // const tradingAprs = await getTradingFeeApr(quickClient, pairAddresses, SPOOKY_LPF);
   // const yearlyTradingFees = await getYearlyJoePlatformTradingFees(joeClient, liquidityProviderFee);
-  // const yearlyTradingFees = await getYearlyPlatformTradingFees(quickClient, liquidityProviderFee);
-  // const totalStakedInQUickUsd = getTotalLpStakedInUsdAVAX(rewardPool, pool, pool.chainId);
-  // const tradingAprs = yearlyTradingFees.div(totalStakedInQUickUsd);
+  const yearlyTradingFees = await getYearlyPlatformTradingFees(quickClient, liquidityProviderFee);
+  const totalStakedInQUickUsd = getTotalLpStakedInUsd(rewardPool, pool, pool.chainId);
+  const tradingAprs = yearlyTradingFees.div(totalStakedInQUickUsd);
 
-  const tradingAprs = await getTradingFeeAprSushi(quickClient, pairAddresses, liquidityProviderFee);
+  //  const tradingAprs = await getTradingFeeAprSushi(quickClient, pairAddresses, liquidityProviderFee);
 
   // console.log('pools', tradingAprs);
-  return getApyBreakdown(pools, tradingAprs, farmAprs, SPOOKY_LPF);
+  return getApyBreakdown(pools, tradingAprs, farmAprs, liquidityProviderFee);
 };
 
 const getPoolApy = async (rewardPool, pool) => {
   const [yearlyRewardsInUsd, totalStakedInUsd] = await Promise.all([
     getYearlyRewardsInUsd(rewardPool, pool.poolId),
-    getTotalLpStakedInUsdAVAX(rewardPool, pool, pool.chainId),
+    getTotalLpStakedInUsd(rewardPool, pool, pool.chainId),
   ]);
   console.log('totalStakedInUsd pool: ', pool.poolId, Number(totalStakedInUsd));
   return yearlyRewardsInUsd.dividedBy(totalStakedInUsd);

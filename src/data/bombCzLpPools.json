@@ -131,5 +131,24 @@
       "oracleId": "PHUB",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bomb-czshares-bomb",
+    "address": "0xCF632b5D1c90C063645bAE91eeAf7Ba8a828C885",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 7,
+    "lp0": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x8169a36EC368882207515D6F509A2E7Fc74203d3",
+      "oracle": "tokens",
+      "oracleId": "CZSHARES",
+      "decimals": "1e18"
+    }
   }
 ]
