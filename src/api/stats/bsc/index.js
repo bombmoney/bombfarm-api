@@ -55,6 +55,10 @@ const getBifiGovApy = require('./beefy/getBifiGovApy');
 const getMoonpotApys = require('./pots/getMoonpotApys');
 
 const getApys = [
+  getCakeApys,
+  getCakePoolApy,
+  getCakeLpApys,
+  getCakeV2PoolApy,
   // get1inchLpApys,
   // get1inchApy,
   // getAlpacaApys,
@@ -76,10 +80,6 @@ const getApys = [
   // getBtdLpApys,
   // getBtsLpApys,
   // getBunnyRewardsApy,
-  // getCakeApys,
-  // getCakePoolApy,
-  // getCakeLpApys,
-  // getCakeV2PoolApy,
   // getComBscApys,
   // getDegensLpApys,
   // getDoppleApys,

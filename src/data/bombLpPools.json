@@ -93,5 +93,24 @@
       "oracleId": "BSHARE",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bomb-phub-bomb",
+    "address": "0x03d5a30Fde7dF6E34b79a3Bb51bAb2c4bEBe001E",
+    "decimals": "1e18",
+    "poolId": 11,
+    "chainId": 56,
+    "lp0": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x95A6772a2272b9822D4b3DfeEaedF732F1D28DB8",
+      "oracle": "tokens",
+      "oracleId": "PHUB",
+      "decimals": "1e18"
+    }
   }
 ]
