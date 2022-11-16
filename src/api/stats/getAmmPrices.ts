@@ -171,7 +171,7 @@ import joeDualLpPools from '../../data/avax/joeDualLpPools.json';
 // import oldPools from '../../data/archive/oldLpPools.json';
 // import kyberPools from '../../data/matic/kyberLpPools.json';
 // import babyPools from '../../data/degens/babyLpPools.json';
-// import quickDualLpPools from '../../data/matic/quickDualLpPools.json';
+import quickDualLpPools from '../../data/matic/quickDualLpPools.json';
 // import pearzapFantomPools from '../../data/fantom/pearzapLpPools.json';
 // import sushiCeloPools from '../../data/celo/sushiLpPools.json';
 // import mooTokens from '../../data/mooTokens.json';
@@ -228,7 +228,7 @@ const pools = [
   // ...wsgPools,
   // ...pearzapFantomPools,
   // ...sushiCeloPools,
-  // ...quickDualLpPools,
+  ...quickDualLpPools,
   // ...babyPools,
   // ...cafePolyPools,
   // ...cafeBscPools,

@@ -93,5 +93,24 @@
       "oracleId": "BTCB",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bomb-bitshare-bomb",
+    "address": "0x1B3B311F08Bc8F0976Ba9D6f8eb826DCBa5772eA",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 5,
+    "lp0": {
+      "address": "0x116B19FBAFCc947E7Ffcc3A42ff7185589143a56",
+      "oracle": "tokens",
+      "oracleId": "BITSHARE",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x522348779DCb2911539e76A1042aA922F9C47Ee3",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    }
   }
 ]
