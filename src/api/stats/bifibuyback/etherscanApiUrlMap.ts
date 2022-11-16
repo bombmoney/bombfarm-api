@@ -6,22 +6,10 @@ export const etherscanApiUrlMap = {
     url: 'https://api.bscscan.com',
     apiToken: 'YWA6YXGBRV3279EMVUPICMWR5TZC1K4UUC',
   },
-  // polygon: {
-  //   url: 'https://api.polygonscan.com',
-  //   apiToken: 'AXIPYQNDK2M98DMKSRMZEJ78PIJSBA9K3V',
-  // },
-  // fantom: {
-  //   url: 'https://api.ftmscan.com',
-  //   apiToken: 'HT3241A1K3ZVN4368JGHAFJXRR36VD8NCC',
-  // },
-  // heco: {
-  //   url: 'https://api.hecoinfo.com',
-  //   apiToken: '6XRRGTTB5ZQWXV55IDQJWYNF2F4GK7I1KK',
-  // },
-  // avax: {
-  //   url: 'https://api.snowtrace.io',
-  //   apiToken: 'RAQVQ1H9766QWV3JYF49CCYCB6WAK8STVB',
-  // },
+  avax: {
+    url: 'https://api.snowtrace.io',
+    apiToken: 'RAQVQ1H9766QWV3JYF49CCYCB6WAK8STVB',
+  },
   // moonriver: {
   //   url: 'https://api-moonriver.moonscan.io',
   //   apiToken: 'ERD8CW11NEI89IFQPJ1I5SJTCIDEG9SZCW',
