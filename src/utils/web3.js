@@ -15,6 +15,9 @@ module.exports = {
   get polygonWeb3() {
     return chainRandomClients.polygonRandomClient();
   },
+  get bombWeb3() {
+    return chainRandomClients.bombRandomClient();
+  },
   get fantomWeb3() {
     return chainRandomClients.fantomRandomClient();
   },

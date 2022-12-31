@@ -37,6 +37,7 @@ const BSC_RPC_ENDPOINTS = CUSTOM_BSC_RPC_ENDPOINTS.length
 const BSC_RPC = process.env.BSC_RPC || BSC_RPC_ENDPOINTS[0];
 const HECO_RPC = process.env.HECO_RPC || 'https://http-mainnet.hecochain.com';
 const AVAX_RPC = process.env.AVAX_RPC || 'https://api.avax.network/ext/bc/C/rpc';
+const BOMB_RPC = process.env.AVAX_RPC || 'https://rpc.bombchain.com';
 const POLYGON_RPC = process.env.POLYGON_RPC || 'https://rpc-mainnet.maticvigil.com/';
 const FANTOM_RPC = process.env.FANTOM_RPC || 'https://rpc.ftm.tools';
 const ONE_RPC = process.env.ONE_RPC || 'https://api.s0.t.hmny.io/';
@@ -49,6 +50,7 @@ const AURORA_RPC =
   'https://mainnet.aurora.dev/Fon6fPMs5rCdJc4mxX4kiSK1vsKdzc3D8k6UF8aruek';
 
 const BSC_CHAIN_ID = ChainId.bsc;
+const BOMB_CHAIN_ID = ChainId.bomb;
 const HECO_CHAIN_ID = ChainId.heco;
 const POLYGON_CHAIN_ID = ChainId.polygon;
 const AVAX_CHAIN_ID = ChainId.avax;
@@ -62,6 +64,7 @@ const AURORA_CHAIN_ID = ChainId.aurora;
 
 const DFYN_LPF = 0.003;
 const SUSHI_LPF = 0.0025;
+const BOMBSWAP_LPF = 0.0025;
 const SPIRIT_LPF = 0.0025;
 const QUICK_LPF = 0.003;
 const APEPOLY_LPF = 0.0015;
@@ -74,6 +77,7 @@ const SOLAR_LPF = 0.002;
 
 const MULTICHAIN_RPC: Record<ChainId, string> = {
   [ChainId.bsc]: BSC_RPC,
+  [ChainId.bomb]: BOMB_RPC,
   [ChainId.avax]: AVAX_RPC,
   [ChainId.heco]: HECO_RPC,
   [ChainId.polygon]: POLYGON_RPC,
@@ -88,6 +92,8 @@ const MULTICHAIN_RPC: Record<ChainId, string> = {
 
 const BSC_VAULTS_ENDPOINT =
   'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/bsc_pools.js';
+const BOMB_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/bomb_pools.js';
 const HECO_VAULTS_ENDPOINT =
   'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/heco_pools.js';
 const AVAX_VAULTS_ENDPOINT =
@@ -111,6 +117,7 @@ const CRONOS_VAULTS_ENDPOINT =
 
 const MULTICHAIN_ENDPOINTS = {
   bsc: BSC_VAULTS_ENDPOINT,
+  bomb: BOMB_VAULTS_ENDPOINT,
   // heco: HECO_VAULTS_ENDPOINT,
   avax: AVAX_VAULTS_ENDPOINT,
   polygon: POLYGON_VAULTS_ENDPOINT,
@@ -131,6 +138,9 @@ const EXCLUDED_IDS_FROM_TVL = ['venus-wbnb'];
 export {
   API_BASE_URL,
   BSC_RPC,
+  BOMB_RPC,
+  BOMB_CHAIN_ID,
+  BOMB_VAULTS_ENDPOINT,
   BSC_RPC_ENDPOINTS,
   BSC_CHAIN_ID,
   BSC_VAULTS_ENDPOINT,

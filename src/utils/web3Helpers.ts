@@ -4,6 +4,8 @@ import { BeefyFinance } from '../../packages/address-book/types/beefyfinance';
 
 import {
   BSC_RPC_ENDPOINTS,
+  BOMB_RPC,
+  BOMB_CHAIN_ID,
   HECO_RPC,
   AVAX_RPC,
   POLYGON_RPC,
@@ -29,6 +31,7 @@ import {
 
 const MULTICALLS: Record<ChainId, Pick<BeefyFinance, 'multicall'>['multicall']> = {
   [ChainId.bsc]: addressBookByChainId[ChainId.bsc].platforms.beefyfinance.multicall,
+  [ChainId.bomb]: addressBookByChainId[ChainId.bomb].platforms.beefyfinance.multicall,
   [ChainId.heco]: addressBookByChainId[ChainId.heco].platforms.beefyfinance.multicall,
   [ChainId.polygon]: addressBookByChainId[ChainId.polygon].platforms.beefyfinance.multicall,
   [ChainId.fantom]: addressBookByChainId[ChainId.fantom].platforms.beefyfinance.multicall,
@@ -43,6 +46,7 @@ const MULTICALLS: Record<ChainId, Pick<BeefyFinance, 'multicall'>['multicall']> 
 
 const clients: Record<keyof typeof ChainId, Web3[]> = {
   bsc: [],
+  bomb: [],
   heco: [],
   avax: [],
   polygon: [],
@@ -57,6 +61,7 @@ const clients: Record<keyof typeof ChainId, Web3[]> = {
 BSC_RPC_ENDPOINTS.forEach(endpoint => {
   clients.bsc.push(new Web3(endpoint));
 });
+clients.bomb.push(new Web3(BOMB_RPC));
 clients.heco.push(new Web3(HECO_RPC));
 clients.avax.push(new Web3(AVAX_RPC));
 clients.polygon.push(new Web3(POLYGON_RPC));
@@ -74,6 +79,7 @@ export const chainRandomClients = {
   avaxRandomClient: () => clients.avax[~~(clients.avax.length * Math.random())],
   polygonRandomClient: () => clients.polygon[~~(clients.polygon.length * Math.random())],
   fantomRandomClient: () => clients.fantom[~~(clients.fantom.length * Math.random())],
+  bombRandomClient: () => clients.bomb[~~(clients.bomb.length * Math.random())],
   oneRandomClient: () => clients.one[~~(clients.one.length * Math.random())],
   arbitrumRandomClient: () => clients.arbitrum[~~(clients.arbitrum.length * Math.random())],
   celoRandomClient: () => clients.celo[~~(clients.celo.length * Math.random())],
@@ -86,6 +92,8 @@ export const _web3Factory = (chainId: ChainId) => {
   switch (chainId) {
     case BSC_CHAIN_ID:
       return chainRandomClients.bscRandomClient();
+    case BOMB_CHAIN_ID:
+      return chainRandomClients.bombRandomClient();
     case HECO_CHAIN_ID:
       return chainRandomClients.hecoRandomClient();
     case AVAX_CHAIN_ID:

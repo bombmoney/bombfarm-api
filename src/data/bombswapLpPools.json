@@ -1,0 +1,21 @@
+[
+  {
+    "name": "bombswap-bombswap-bomb",
+    "address": "0x43C4D5D8fd96558Aa3e2134E93Ed8B7035c4C552",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 0,
+    "lp0": {
+      "address": "0x87460B9F21763aee800b94362062a06dA1B5f6Ee",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xaC029BF2871b3f810AAbF836Adc4F89369027971",
+      "oracle": "tokens",
+      "oracleId": "BOMBSWAP",
+      "decimals": "1e18"
+    }
+  }
+]

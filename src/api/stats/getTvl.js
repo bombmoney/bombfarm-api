@@ -4,6 +4,9 @@ const {
   BSC_CHAIN_ID,
   BSC_VAULTS_ENDPOINT,
 
+  BOMB_CHAIN_ID,
+  BOMB_VAULTS_ENDPOINT,
+
   // HECO_CHAIN_ID,
   // HECO_VAULTS_ENDPOINT,
 
@@ -50,6 +53,11 @@ const chains = [
     chainId: POLYGON_CHAIN_ID,
     vaultsEndpoint: POLYGON_VAULTS_ENDPOINT,
     governancePool: require('../../data/matic/governancePool.json'),
+  },
+  {
+    chainId: BOMB_CHAIN_ID,
+    vaultsEndpoint: BOMB_VAULTS_ENDPOINT,
+    //  governancePool: require('../../data/bomb/governancePool.json'),
   },
   // {
   //   chainId: FANTOM_CHAIN_ID,

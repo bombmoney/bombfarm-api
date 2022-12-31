@@ -1,6 +1,6 @@
 'use strict';
 
-const { getApys } = require('./getApys');
+const { getApys } = require('./getApys').default;
 
 const TIMEOUT = 5 * 60 * 1000;
 

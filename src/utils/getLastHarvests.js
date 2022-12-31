@@ -4,6 +4,7 @@ import { ChainId } from '../../packages/address-book/address-book';
 
 const MULTICALLS = {
   bsc: '0xE09C534adE063222BDDC1EB5DD86bBF4bf194F90',
+  bomb: '0x6651c16BcfD1fDD8106F1e1270f88db257923933',
   heco: '0x1b6Bc65dBd597220DD0e8d3D8f976F0D18DfffB6',
   polygon: '0x7a4098B4a368826BBf0Ba45DAaAe8B0DE1Bf0b12',
   fantom: '0x28373e5fF2Ea0aeabe09b2651cE6Df4Ec10982f7',

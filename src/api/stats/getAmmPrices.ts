@@ -45,6 +45,7 @@ import pangolinPools from '../../data/avax/pangolinLpPools.json';
 import comAvaxPools from '../../data/avax/comAvaxLpPools.json';
 // import comBscPools from '../../data/comBscLpPools.json';
 import snowballPools from '../../data/avax/snobLpPools.json';
+import bombswapPools from '../../data/bombswapLpPools.json';
 // import pumpyPools from '../../data/pumpyLpPools.json';
 // import spacePools from '../../data/degens/spaceLpPools.json';
 // import nautPools from '../../data/degens/nautLpPools.json';
@@ -229,6 +230,7 @@ const pools = [
   // ...pearzapFantomPools,
   // ...sushiCeloPools,
   ...quickDualLpPools,
+  ...bombswapPools,
   // ...babyPools,
   // ...cafePolyPools,
   // ...cafeBscPools,
@@ -389,7 +391,7 @@ const pools = [
 
 // const dmmPools = [...kyberPools];
 
-const coinGeckoCoins = ['stasis-eurs', 'tether-eurt'];
+const coinGeckoCoins = ['stasis-eurs', 'tether-eurt', 'bomb-money'];
 
 const knownPrices = {
   BUSD: 1,

@@ -8,6 +8,7 @@ export enum ChainId {
   arbitrum = 42161,
   celo = 42220,
   moonriver = 1285,
+  bomb = 2300,
   cronos = 25,
   aurora = 1313161554,
 }

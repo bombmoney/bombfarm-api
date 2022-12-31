@@ -1,8 +1,9 @@
-const { getAvaxApys } = require('./avax');
-const { getMaticApys } = require('./matic');
+import { getAvaxApys } from './avax';
+import { getMaticApys } from './matic';
 // const { getHecoApys } = require('./heco');
 // const { getFantomApys } = require('./fantom');
-const { getBSCApys } = require('./bsc');
+import { getBSCApys } from './bsc';
+import { getBombApys } from './bomb';
 // const { getOneApys } = require('./one');
 // const { getArbitrumApys } = require('./arbitrum');
 // const { getCeloApys } = require('./celo');
@@ -30,9 +31,11 @@ const updateApys = async () => {
     const results = await Promise.allSettled([
       getMaticApys(),
       getAvaxApys(),
+      getBombApys(),
       // getFantomApys(),
       // getHecoApys(),
       getBSCApys(),
+
       // getOneApys(),
       // getArbitrumApys(),
       // getCeloApys(),
@@ -81,4 +84,4 @@ const updateApys = async () => {
 
 setTimeout(updateApys, INIT_DELAY);
 
-module.exports = { getApys };
+export default { getApys };

@@ -4,6 +4,7 @@ import { avax } from './avax';
 import { fantom } from './fantom';
 import { heco } from './heco';
 import { one } from './one';
+import { bomb } from './bomb';
 import { arbitrum } from './arbitrum';
 import { celo } from './celo';
 import { moonriver } from './moonriver';
@@ -19,6 +20,7 @@ const _addressBook = {
   polygon,
   bsc,
   avax,
+  bomb,
   fantom,
   heco,
   one,
@@ -31,6 +33,7 @@ const _addressBook = {
 const _addressBookByChainId = {
   [ChainId.polygon]: polygon,
   [ChainId.bsc]: bsc,
+  [ChainId.bomb]: bomb,
   [ChainId.avax]: avax,
   [ChainId.fantom]: fantom,
   [ChainId.heco]: heco,
