@@ -10,10 +10,9 @@ export const etherscanApiUrlMap = {
     url: 'https://api.snowtrace.io',
     apiToken: 'RAQVQ1H9766QWV3JYF49CCYCB6WAK8STVB',
   },
-  // moonriver: {
-  //   url: 'https://api-moonriver.moonscan.io',
-  //   apiToken: 'ERD8CW11NEI89IFQPJ1I5SJTCIDEG9SZCW',
-  // },
+  bomb: {
+    url: 'https://bombscan.com',
+  },
   // arbitrum: {
   //   url: 'https://api.arbiscan.io',
   //   apiToken: 'QR9KETWZEU64T1TQN4V8VD7H6HIE3X95UW',
