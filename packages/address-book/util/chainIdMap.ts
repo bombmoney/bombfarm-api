@@ -1,5 +1,6 @@
 const chainIdMap = {
   bsc: 56,
+  bomb: 2300,
   heco: 128,
   avax: 43114,
   fantom: 250,

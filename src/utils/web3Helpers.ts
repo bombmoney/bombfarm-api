@@ -39,7 +39,7 @@ const MULTICALLS: Record<ChainId, Pick<BeefyFinance, 'multicall'>['multicall']> 
   [ChainId.one]: addressBookByChainId[ChainId.one].platforms.beefyfinance.multicall,
   [ChainId.arbitrum]: addressBookByChainId[ChainId.arbitrum].platforms.beefyfinance.multicall,
   [ChainId.celo]: addressBookByChainId[ChainId.celo].platforms.beefyfinance.multicall,
-  [ChainId.moonriver]: addressBookByChainId[ChainId.moonriver].platforms.beefyfinance.multicall,
+  [ChainId.moonriver]: '',
   [ChainId.cronos]: addressBookByChainId[ChainId.cronos].platforms.beefyfinance.multicall,
   [ChainId.aurora]: '',
 };

@@ -19,14 +19,14 @@ export * from '../types/chainid';
 const _addressBook = {
   polygon,
   bsc,
-  avax,
   bomb,
+  avax,
   fantom,
   heco,
   one,
   arbitrum,
   celo,
-  moonriver,
+  //  moonriver,
   cronos,
 } as const;
 
@@ -40,7 +40,7 @@ const _addressBookByChainId = {
   [ChainId.one]: one,
   [ChainId.arbitrum]: arbitrum,
   [ChainId.celo]: celo,
-  [ChainId.moonriver]: moonriver,
+  // [ChainId.moonriver]: moonriver,
   [ChainId.cronos]: cronos,
   // [ChainId.aurora]: aurora,
 } as const;

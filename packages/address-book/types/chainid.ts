@@ -1,5 +1,6 @@
 export enum ChainId {
   bsc = 56,
+  bomb = 2300,
   heco = 128,
   polygon = 137,
   fantom = 250,
@@ -8,7 +9,6 @@ export enum ChainId {
   arbitrum = 42161,
   celo = 42220,
   moonriver = 1285,
-  bomb = 2300,
   cronos = 25,
   aurora = 1313161554,
 }
