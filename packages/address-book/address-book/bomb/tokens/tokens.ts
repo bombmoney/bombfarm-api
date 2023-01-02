@@ -10,7 +10,7 @@ const BOMB = {
   website: 'https://www.bombmoney.com/',
   description:
     'BOMB is an token originally pegged 10:000:1 to BTC, it is now the native token of BOMB Chain.',
-  logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bomb-512.png',
+  logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombchain.png',
 } as const;
 
 const _tokens = {

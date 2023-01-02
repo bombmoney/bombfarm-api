@@ -1,6 +1,6 @@
-const getBombswapLpApys = require('./bombfarm/getBombswapLpApys');
+const { getBombSwapLpApys } = require('./bombfarm/getBombswapLpApys');
 
-const getApys = [getBombswapLpApys];
+const getApys = [getBombSwapLpApys];
 
 const getBombApys = async () => {
   let apys = {};
