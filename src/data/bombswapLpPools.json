@@ -74,5 +74,24 @@
       "oracleId": "BOMB",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bombswap-bombswap-xbombswap",
+    "address": "0x0b72ff8856e47567949b809F2b475933cc2214F9",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 4,
+    "lp0": {
+      "address": "0x4b6e421e1753Cc25c0f3719f16C5d2388172171c",
+      "oracle": "tokens",
+      "oracleId": "XBOMBSWAP",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xaC029BF2871b3f810AAbF836Adc4F89369027971",
+      "oracle": "tokens",
+      "oracleId": "BOMBSWAP",
+      "decimals": "1e18"
+    }
   }
 ]
