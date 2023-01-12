@@ -76,6 +76,44 @@
     }
   },
   {
+    "name": "bombswap-usdt-bomb",
+    "address": "0x0af490E36c69534D83687636bfc52c726C3FdCf1",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 5,
+    "lp0": {
+      "address": "0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB",
+      "oracle": "tokens",
+      "oracleId": "USDT",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x87460B9F21763aee800b94362062a06dA1B5f6Ee",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bombswap-usdc-bomb",
+    "address": "0x0af490E36c69534D83687636bfc52c726C3FdCf1",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 6,
+    "lp0": {
+      "address": "0x75942DD8bD0C6F845a647E0Fa157b5725077960D",
+      "oracle": "tokens",
+      "oracleId": "USDC",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x87460B9F21763aee800b94362062a06dA1B5f6Ee",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    }
+  },
+  {
     "name": "bombswap-bombswap-xbombswap",
     "address": "0x0b72ff8856e47567949b809F2b475933cc2214F9",
     "decimals": "1e18",

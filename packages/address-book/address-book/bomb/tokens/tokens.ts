@@ -62,7 +62,7 @@ const _tokens = {
   USDC: {
     name: 'BOMB-Wrapped USD Coin',
     symbol: 'USDC',
-    address: '0x0889cE27aDE6231a9820E34bA6E68fc0142b8d18',
+    address: '0x75942DD8bD0C6F845a647E0Fa157b5725077960D',
     chainId: 2300,
     decimals: 18,
     website: 'https://www.circle.com/usdc',
@@ -73,7 +73,7 @@ const _tokens = {
   USDT: {
     name: 'Tether USD',
     symbol: 'USDT',
-    address: '0xAde84DAC4E7DcE63e676131c96626f6923211429',
+    address: '0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB',
     chainId: 2300,
     decimals: 18,
     website: 'https://tether.to/',
