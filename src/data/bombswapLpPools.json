@@ -96,7 +96,7 @@
   },
   {
     "name": "bombswap-usdc-bomb",
-    "address": "0x0af490E36c69534D83687636bfc52c726C3FdCf1",
+    "address": "0xf30C0072dFa69aeE9df375Ef46B8E841530762E6",
     "decimals": "1e18",
     "chainId": 2300,
     "poolId": 6,
