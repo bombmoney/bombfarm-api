@@ -37,6 +37,16 @@ const _tokens = {
     website: 'https://bombswap.xyz/',
     description: 'XBOMBSWAP Token',
   },
+  PHUB: {
+    name: 'PegHub',
+    symbol: 'PHUB',
+    address: '0x27Efe14C951631aF75C4c6B618EFA03634aFb5D0',
+    chainId: 2300,
+    decimals: 18,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/PHUB.png',
+    website: 'https://bombswap.xyz/',
+    description: 'PHUB Token',
+  },
   WBTC: {
     name: 'BITCOIN',
     symbol: 'WBTC',

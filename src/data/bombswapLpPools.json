@@ -131,5 +131,62 @@
       "oracleId": "BOMBSWAP",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bombswap-phub-bomb",
+    "address": "0x4d9d0B5C6D92F3c02F7cB3d8E09ed56530C3999C",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 7,
+    "lp0": {
+      "address": "0x27Efe14C951631aF75C4c6B618EFA03634aFb5D0",
+      "oracle": "tokens",
+      "oracleId": "PHUB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x87460B9F21763aee800b94362062a06dA1B5f6Ee",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bombswap-bombswap-usdt",
+    "address": "0x03008690538B6ebB2ca2EAcae465b23600f3936B",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 8,
+    "lp0": {
+      "address": "0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB",
+      "oracle": "tokens",
+      "oracleId": "USDT",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xaC029BF2871b3f810AAbF836Adc4F89369027971",
+      "oracle": "tokens",
+      "oracleId": "BOMBSWAP",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "bombswap-usdc-usdt",
+    "address": "0x48327600253dBaDd735AC12E6ACcA8c22362235E",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 9,
+    "lp0": {
+      "address": "0x0FCbc0baCaD8C73be4Fad141682542b44C4737bB",
+      "oracle": "tokens",
+      "oracleId": "USDT",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x75942DD8bD0C6F845a647E0Fa157b5725077960D",
+      "oracle": "tokens",
+      "oracleId": "USDC",
+      "decimals": "1e18"
+    }
   }
 ]
