@@ -10,7 +10,11 @@ const fetchCoinGeckoPrices = async coins => {
     const data = response.data;
     Object.keys(data).forEach(coin => {
       const price = Number(data[coin].usd);
-      prices = { ...prices, ...{ [coin]: price } };
+      let coinName = coin;
+      if (coin === 'bomb-money') {
+        coinName = 'BOMB';
+      }
+      prices = { ...prices, ...{ [coinName]: price } };
     });
   } catch (e) {
     console.error('> fetchCoinGeckoPrices', e);
