@@ -5,6 +5,7 @@ import pools from '../../../../data/bombswapLpPools.json';
 //import pools from './vaults.json';
 import MasterChef from '../../../../abis/BombMasterChef.json';
 import { AbiItem } from 'web3-utils';
+import { bombClient } from '../../../../apollo/client';
 
 import { addressBook } from '../../../../../packages/address-book/address-book';
 
@@ -32,6 +33,7 @@ export const getBombSwapLpApys = () => {
     oracle: 'tokens',
     oracleId: 'BOMBSWAP',
     decimals: '1e18',
+    tradingFeeInfoClient: bombClient,
     log: true,
   });
 };

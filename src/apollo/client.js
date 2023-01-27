@@ -156,6 +156,14 @@ const lydiaClient = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+const bombClient = new ApolloClient({
+  link: createHttpLink({
+    uri: 'https://graph.bombchain.com/subgraphs/name/bombswap/bombswap',
+    fetch,
+  }),
+  cache: new InMemoryCache(),
+});
+
 const oliveClient = new ApolloClient({
   link: createHttpLink({
     uri: 'https://api.thegraph.com/subgraphs/name/olive-rose/olivecash',
