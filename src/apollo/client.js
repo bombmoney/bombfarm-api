@@ -265,6 +265,7 @@ const isBeetClient = client => {
 module.exports = {
   joeClient,
   dfynClient,
+  bombClient,
   acsiClient,
   apePolyClient,
   sushiClient,
