@@ -37,6 +37,16 @@ const _tokens = {
     website: 'https://bombswap.xyz/',
     description: 'XBOMBSWAP Token',
   },
+  BOHM: {
+    name: 'BOHM.MONEY',
+    symbol: 'BOHM',
+    address: '0x2C6a12d0fAFc78Ff1F7cf8a37F949601c6c8c0ae',
+    chainId: 2300,
+    decimals: 9,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bohm.png',
+    website: 'https://bohm.money/',
+    description: 'BOHM Token',
+  },
   PHUB: {
     name: 'PegHub',
     symbol: 'PHUB',

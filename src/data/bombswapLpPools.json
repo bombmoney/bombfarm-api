@@ -188,5 +188,24 @@
       "oracleId": "USDC",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bombswap-bohm-bomb",
+    "address": "0x8AB3255A3A7fa60560F0422A808a428af21A70dC",
+    "decimals": "1e18",
+    "chainId": 2300,
+    "poolId": 10,
+    "lp0": {
+      "address": "0x2C6a12d0fAFc78Ff1F7cf8a37F949601c6c8c0ae",
+      "oracle": "tokens",
+      "oracleId": "BOHM",
+      "decimals": "1e9"
+    },
+    "lp1": {
+      "address": "0x87460B9F21763aee800b94362062a06dA1B5f6Ee",
+      "oracle": "tokens",
+      "oracleId": "BOMB",
+      "decimals": "1e18"
+    }
   }
 ]
