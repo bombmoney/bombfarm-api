@@ -150,5 +150,24 @@
       "oracleId": "CZSHARES",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "bomb-czeth-eth",
+    "address": "0xC0fcB9bA8da90Bd3ee135ab6efBDE644f72270bD",
+    "decimals": "1e18",
+    "chainId": 56,
+    "poolId": 8,
+    "lp0": {
+      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "oracle": "tokens",
+      "oracleId": "ETH",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xbaBC232Ad871f36A6487C2dC117CbB4f2970EaA0",
+      "oracle": "tokens",
+      "oracleId": "CZETH",
+      "decimals": "1e18"
+    }
   }
 ]

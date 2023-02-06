@@ -145,6 +145,16 @@ const _tokens = {
     website: 'https://www.czpegs.com/',
     description: 'Multi-peg Algorithmic Stablecoin protocol',
   },
+  CZETH: {
+    name: 'CZETH',
+    symbol: 'CZETH',
+    address: '0xbaBC232Ad871f36A6487C2dC117CbB4f2970EaA0',
+    chainId: 56,
+    decimals: 18,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/czeth.png',
+    website: 'https://www.czpegs.com/',
+    description: 'Multi-peg Algorithmic Stablecoin protocol',
+  },
   CZBUSD: {
     name: 'CZBUSD',
     symbol: 'CZBUSD',
