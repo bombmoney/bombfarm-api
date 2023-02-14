@@ -57,6 +57,28 @@ const _tokens = {
     website: 'https://bombswap.xyz/',
     description: 'PHUB Token',
   },
+  CZSHARE: {
+    name: 'CZshare',
+    symbol: 'CZshare',
+    address: '0x9c3AE689eE6907F7CF3b09834596aB42f83b8Db9',
+    chainId: 2300,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombswap/0x9c3ae689ee6907f7cf3b09834596ab42f83b8db9.png',
+    website: 'https://bombswap.xyz/',
+    description: 'CZshare Token',
+  },
+  BITSHARE: {
+    name: 'bitSHARE',
+    symbol: 'bitSHARE',
+    address: '0x36e3eC21e523BA0A08308154925D9bF2D5A67194',
+    chainId: 2300,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombswap/0x36e3ec21e523ba0a08308154925d9bf2d5a67194.png',
+    website: 'https://bombswap.xyz/',
+    description: 'bitSHARE Token',
+  },
   WBTC: {
     name: 'BITCOIN',
     symbol: 'WBTC',
