@@ -33,17 +33,13 @@ const getSwampyLpApys = async () => {
 };
 
 const getPoolApy = async (masterchef, swampchef, pool) => {
-  const [
-    yearlyRewardsInUsd,
-    totalStakedInUsd,
-    cakeYearlyRewardsInUsd,
-    cakeTotalStakedInUsd,
-  ] = await Promise.all([
-    getYearlyRewardsInUsd(swampchef, pool),
-    getTotalLpStakedInUsd(pool),
-    getCakeYearlyRewardsInUsd(masterchef, pool),
-    getCakeTotalLpStakedInUsd(masterchef, pool),
-  ]);
+  const [yearlyRewardsInUsd, totalStakedInUsd, cakeYearlyRewardsInUsd, cakeTotalStakedInUsd] =
+    await Promise.all([
+      getYearlyRewardsInUsd(swampchef, pool),
+      getTotalLpStakedInUsd(pool),
+      getCakeYearlyRewardsInUsd(masterchef, pool),
+      getCakeTotalLpStakedInUsd(masterchef, pool),
+    ]);
   const simpleApySwamp = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
   const simpleApyCake = cakeYearlyRewardsInUsd.dividedBy(cakeTotalStakedInUsd);
   const simpleApy = new BigNumber(simpleApyCake.plus(simpleApySwamp));

@@ -18,7 +18,7 @@ const getApys = [
   getMovrBifiMaxiApy,
   getFinnLpApys,
   getFinnApy,
-  ];
+];
 
 const getMoonriverApys = async () => {
   let apys = {};

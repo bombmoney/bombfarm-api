@@ -8,7 +8,7 @@ const {
     platforms: {
       beefyfinance: { rewardPool },
     },
-    tokens: { BIFI, WHT }
+    tokens: { BIFI, WHT },
   },
 } = addressBook;
 

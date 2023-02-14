@@ -38,11 +38,13 @@ const getMasterChefData = async pool => {
   const multicall = new MultiCall(web3, multicallAddress(chainId));
   const masterchefContract = new web3.eth.Contract(ISolarVault, pool.masterchef);
 
-  let calls = [{
-    totalAllocPoint: masterchefContract.methods.totalAllocPoint(),
-    rewardRate: masterchefContract.methods.solarPerBlock(),
-    poolInfo: masterchefContract.methods.poolInfo(pool.poolId),
-  }];
+  let calls = [
+    {
+      totalAllocPoint: masterchefContract.methods.totalAllocPoint(),
+      rewardRate: masterchefContract.methods.solarPerBlock(),
+      poolInfo: masterchefContract.methods.poolInfo(pool.poolId),
+    },
+  ];
 
   const res = await multicall.all([calls]);
 
@@ -52,6 +54,6 @@ const getMasterChefData = async pool => {
   const balance = res[0].map(v => v.poolInfo['6']);
 
   return { totalAllocPoint, rewardRate, allocPoint, balance };
-}
+};
 
 module.exports = { getSolarApy };

@@ -26,4 +26,4 @@ export const getMaiApys = () => {
     liquidityProviderFee: 0.0025,
     // log: true,
   });
-}
+};

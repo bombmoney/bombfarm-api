@@ -19,17 +19,13 @@ const oracle = 'tokens';
 const DECIMALS = '1e18';
 
 const getSwampyCakeApy = async () => {
-  const [
-    yearlyRewardsInUsd,
-    totalStakedInUsd,
-    cakeYearlyRewardsInUsd,
-    cakeTotalStakedInUsd,
-  ] = await Promise.all([
-    getYearlyRewardsInUsd(),
-    getTotalStakedInUsd(),
-    getCakeYearlyRewardsInUsd(),
-    getCakeTotalStakedInUsd(),
-  ]);
+  const [yearlyRewardsInUsd, totalStakedInUsd, cakeYearlyRewardsInUsd, cakeTotalStakedInUsd] =
+    await Promise.all([
+      getYearlyRewardsInUsd(),
+      getTotalStakedInUsd(),
+      getCakeYearlyRewardsInUsd(),
+      getCakeTotalStakedInUsd(),
+    ]);
   const simpleApySwamp = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
   const simpleApyCake = cakeYearlyRewardsInUsd.dividedBy(cakeTotalStakedInUsd);
   const simpleApy = new BigNumber(simpleApyCake.plus(simpleApySwamp));

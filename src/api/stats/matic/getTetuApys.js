@@ -12,7 +12,6 @@ const xTETUAddress = '0x225084D30cc297F3b177d9f93f5C3Ab8fb6a1454';
 const afterBurnFee = 0.3;
 
 const getTetuApys = async () => {
-
   const farmApys = await getFarmApys();
   const apyBreakdown = getApyBreakdown(pools, 0, farmApys, 0);
 
@@ -64,7 +63,7 @@ const getPoolsData = async () => {
   return { balances, rewardRates };
 };
 
-const getXPrice = async (tokenPrice) => {
+const getXPrice = async tokenPrice => {
   const xTokenContract = new web3.eth.Contract(ISmartVault, xTETUAddress);
   const exchangeRate = new BigNumber(await xTokenContract.methods.getPricePerFullShare().call());
 

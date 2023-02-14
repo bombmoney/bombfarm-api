@@ -42,7 +42,9 @@ const getYearlyRewardsInUsd = async (params: BifiApyParams) => {
 
 const getTotalStakedInUsd = async (params: BifiApyParams) => {
   const tokenContract = new params.web3.eth.Contract(ERC20, params.bifi);
-  const totalStaked = new BigNumber(await tokenContract.methods.balanceOf(params.rewardPool).call());
+  const totalStaked = new BigNumber(
+    await tokenContract.methods.balanceOf(params.rewardPool).call()
+  );
   const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'BIFI' });
 
   return totalStaked.times(tokenPrice).dividedBy('1e18');
