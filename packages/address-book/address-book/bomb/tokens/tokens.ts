@@ -68,6 +68,17 @@ const _tokens = {
     website: 'https://bombswap.xyz/',
     description: 'CZshare Token',
   },
+  B2SHARE: {
+    name: 'B2SHARE',
+    symbol: 'B2SHARE',
+    address: '0x0DF73831C00B157bB0FeD3c06eB475F201B64a78',
+    chainId: 56,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombswap/0x9c3ae689ee6907f7cf3b09834596ab42f83b8db9.png',
+    website: 'https://bombswap.xyz/',
+    description: 'CZshare Token',
+  },
   BITSHARE: {
     name: 'bitSHARE',
     symbol: 'bitSHARE',
