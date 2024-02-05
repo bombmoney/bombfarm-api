@@ -15,10 +15,10 @@ import getNonAmmPrices from './getNonAmmPrices';
 // import bdollarSbdoPools from '../../data/bdollarSbdoLpPools.json';
 // import boltBtdPools from '../../data/boltBtdLpPools.json';
 // import boltBtsPools from '../../data/boltBtsLpPools.json';
-import bombLpPools from '../../data/bombLpPools.json';
+// import bombLpPools from '../../data/bombLpPools.json';
 import snowLpPools from '../../data/bombSnowLpPools.json';
 import polyLpPools from '../../data/bombPolyLpPools.json';
-
+import bombLpPools from '../../data/bombMoneyLpPools.json';
 import bombCzLpPools from '../../data/bombCzLpPools.json';
 import bitbombLpPools from '../../data/bitbombLpPools.json';
 import cakeLpPools from '../../data/cakeLpPools.json';

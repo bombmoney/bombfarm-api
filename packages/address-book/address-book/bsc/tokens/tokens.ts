@@ -35,6 +35,16 @@ const _tokens = {
     website: 'https://bitbomb.io/',
     description: 'Algorithmic Stablecoin pegged to BTC.',
   },
+  B2SHARE: {
+    name: 'B2SHARE',
+    symbol: 'B2SHARE',
+    address: '0x0DF73831C00B157bB0FeD3c06eB475F201B64a78',
+    chainId: 56,
+    decimals: 18,
+    logoURI: 'https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bshare-token-icon.png',
+    website: 'https://bomb.money/',
+    description: 'Algorithmic Stablecoin pegged to BTC.',
+  },
   BITDOT: {
     name: 'BITDOT',
     symbol: 'BITDOT',
